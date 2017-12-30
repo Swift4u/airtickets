@@ -51,7 +51,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Data da volta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLK-p6-V3f" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Data da volta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLK-p6-V3f" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
                                                 <rect key="frame" x="195" y="170" width="161" height="54"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="6QT-Ii-JSn"/>
@@ -75,6 +75,9 @@
                                                     <constraint firstAttribute="height" constant="54" id="pmO-Id-DuB"/>
                                                 </constraints>
                                                 <state key="normal" title="Pesquisar passagem"/>
+                                                <connections>
+                                                    <action selector="onSearchFlights:" destination="X82-17-wK8" eventType="touchUpInside" id="r25-N9-UGj"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

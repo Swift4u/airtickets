@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimePickerView" customModule="airtickets" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCancel" destination="uVf-gW-QuF" id="tW0-rI-9CO"/>
+                <outlet property="btnDone" destination="Wll-Oq-d8K" id="q56-CP-LpV"/>
+                <outlet property="pickerView" destination="a6I-5K-Sec" id="Jj7-uH-wsE"/>
+                <outlet property="toolBar" destination="y6V-Xq-Qd3" id="DJE-8K-lwE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="219"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6V-Xq-Qd3">
+                    <rect key="frame" x="0.0" y="0.0" width="448" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="QNd-mP-eQ2"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem systemItem="cancel" id="uVf-gW-QuF"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="LvR-pj-bHh"/>
+                        <barButtonItem style="done" systemItem="done" id="Wll-Oq-d8K"/>
+                    </items>
+                </toolbar>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="a6I-5K-Sec">
+                    <rect key="frame" x="0.0" y="44" width="448" height="175"/>
+                    <date key="date" timeIntervalSinceReferenceDate="494521171.81422901">
+                        <!--2016-09-02 14:59:31 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="y6V-Xq-Qd3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5jR-Hh-5dg"/>
+                <constraint firstAttribute="bottom" secondItem="a6I-5K-Sec" secondAttribute="bottom" id="gsu-qb-d2U"/>
+                <constraint firstAttribute="trailing" secondItem="a6I-5K-Sec" secondAttribute="trailing" id="h2X-aw-20Y"/>
+                <constraint firstItem="a6I-5K-Sec" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jI5-aA-dUi"/>
+                <constraint firstAttribute="trailing" secondItem="y6V-Xq-Qd3" secondAttribute="trailing" id="nL5-Hh-Zbh"/>
+                <constraint firstItem="a6I-5K-Sec" firstAttribute="top" secondItem="y6V-Xq-Qd3" secondAttribute="bottom" id="pge-xB-IVg"/>
+                <constraint firstItem="y6V-Xq-Qd3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="z60-GR-KXm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="245" y="305.5"/>
+        </view>
+    </objects>
+</document>

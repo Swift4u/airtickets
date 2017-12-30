@@ -58,6 +58,16 @@ class SearchTextField: UITextField {
         }
     }
     
+    override var isEnabled: Bool {
+        didSet {
+            if isEnabled {
+                backgroundColor = UIColor.white
+            } else {
+                backgroundColor = UIColor(red: 242/255.0, green: 242/255.0, blue: 242/255.0, alpha: 0.7)
+            }
+        }
+    }
+    
     // MARK:- Init
     required init?(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)
@@ -151,7 +161,11 @@ class SearchTextField: UITextField {
         layer.shadowRadius = 1.0
         layer.masksToBounds = false
         
-        backgroundColor = UIColor.white
+        if isEnabled {
+            backgroundColor = UIColor.white
+        } else {
+            backgroundColor = UIColor(red: 242/255.0, green: 242/255.0, blue: 242/255.0, alpha: 0.7)
+        }
     }
     
     func setRightIcon(_ rightIcon: UIImage?) {

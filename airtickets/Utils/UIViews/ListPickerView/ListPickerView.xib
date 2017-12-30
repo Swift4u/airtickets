@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListPickerView" customModule="airtickets" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCancel" destination="zyC-UA-Lmc" id="dS2-yZ-eYV"/>
+                <outlet property="btnDone" destination="YnI-32-27n" id="19R-zb-St0"/>
+                <outlet property="pickerView" destination="ONx-CB-QaB" id="sMH-9f-4g5"/>
+                <outlet property="toolBar" destination="1A8-29-Lqi" id="vBP-R1-adG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="219"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1A8-29-Lqi">
+                    <rect key="frame" x="0.0" y="0.0" width="448" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="nGu-wz-Ahz"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem systemItem="cancel" id="zyC-UA-Lmc">
+                            <connections>
+                                <action selector="cancel:" destination="-1" id="djz-Ml-CcA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="yfG-Om-csg"/>
+                        <barButtonItem style="done" systemItem="done" id="YnI-32-27n">
+                            <connections>
+                                <action selector="done:" destination="-1" id="Elu-9P-DRe"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONx-CB-QaB">
+                    <rect key="frame" x="0.0" y="44" width="448" height="175"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qZr-0D-RgZ"/>
+                        <outlet property="delegate" destination="-1" id="tTG-HQ-hdF"/>
+                    </connections>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1A8-29-Lqi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6Li-dB-ODz"/>
+                <constraint firstItem="ONx-CB-QaB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JSR-wt-Okc"/>
+                <constraint firstItem="ONx-CB-QaB" firstAttribute="top" secondItem="1A8-29-Lqi" secondAttribute="bottom" id="NXl-85-hgU"/>
+                <constraint firstItem="1A8-29-Lqi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dLm-8M-ChN"/>
+                <constraint firstAttribute="bottom" secondItem="ONx-CB-QaB" secondAttribute="bottom" id="g6f-pb-i85"/>
+                <constraint firstAttribute="trailing" secondItem="ONx-CB-QaB" secondAttribute="trailing" id="l6m-mQ-Hfy"/>
+                <constraint firstAttribute="trailing" secondItem="1A8-29-Lqi" secondAttribute="trailing" id="qkH-c6-IdU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="449" y="227.5"/>
+        </view>
+    </objects>
+</document>

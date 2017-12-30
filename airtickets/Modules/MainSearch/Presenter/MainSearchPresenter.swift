@@ -21,7 +21,7 @@ class MainSearchPresenter {
 extension MainSearchPresenter: MainSearchPresentation {
     
     func didClickSearchButton() {
-        interactor?.searchFlights()
+        //interactor?.searchFlights()
         view?.showLoading()
     }
     

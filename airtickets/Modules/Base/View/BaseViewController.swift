@@ -12,6 +12,7 @@ class BaseViewController: UIViewController, BaseView {
     
     // MARK: Properties
     
+    var activeField: UITextField?
     fileprivate var internalScrollView: UIScrollView?
     
     // MARK: Methods
@@ -66,8 +67,9 @@ class BaseViewController: UIViewController, BaseView {
         aRect.size.height -= keyboardSize.height
         guard let activeFieldPresent = findActiveTextField(view.subviews) else { return }
         
-        if (!aRect.contains(activeFieldPresent.frame.origin))
-        {
+        activeField = activeFieldPresent
+        
+        if !aRect.contains(activeFieldPresent.frame.origin) {
             internalScrollView?.scrollRectToVisible(activeFieldPresent.frame, animated: true)
         }
     }
@@ -76,6 +78,8 @@ class BaseViewController: UIViewController, BaseView {
         let contentInsets = UIEdgeInsets.zero
         internalScrollView?.contentInset = contentInsets
         internalScrollView?.scrollIndicatorInsets = contentInsets
+        
+        activeField = nil
     }
 
 }

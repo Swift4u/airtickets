@@ -98,7 +98,7 @@ public class LoadingSpinner: UIView {
     public lazy var titleLabel = UILabel()
     public var subtitleLabel: UILabel?
     
-    private let outerCircleDefaultColor = UIColor(red: 255/255.0, green: 95/255.0, blue: 17/255.0, alpha: 1.0).cgColor
+    private let outerCircleDefaultColor = UIColor.blueGreen.cgColor
     fileprivate var _outerColor: UIColor?
     public var outerColor: UIColor? {
         get { return _outerColor }
@@ -108,7 +108,7 @@ public class LoadingSpinner: UIView {
         }
     }
     
-    private let innerCircleDefaultColor = UIColor(red: 255/255.0, green: 95/255.0, blue: 17/255.0, alpha: 0.7).cgColor
+    private let innerCircleDefaultColor = UIColor.topaz.cgColor
     fileprivate var _innerColor: UIColor?
     public var innerColor: UIColor? {
         get { return _innerColor }
@@ -391,7 +391,7 @@ public class LoadingSpinner: UIView {
     private var blurView: UIVisualEffectView!
     private var vibrancyView: UIVisualEffectView!
     
-    private let defaultTitleFont = UIFont(name: Constants.Font.MontserratRegular, size: 22.0)!
+    private let defaultTitleFont = UIFont(name: Constants.Font.MontserratRegular, size: 20.0)!
     private var currentTitleFont : UIFont
     
     let frameSize = CGSize(width: 200.0, height: 200.0)

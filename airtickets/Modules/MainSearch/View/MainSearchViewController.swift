@@ -13,6 +13,8 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable {
     // MARK: Properties
     
     var presenter: MainSearchPresentation?
+    var departurePicker: TimePickerView!
+    var arrivalPicker: TimePickerView!
     
     // MARK: IBOutlets
     
@@ -59,14 +61,60 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable {
         tfDeparture.setRightIcon(UIImage(named: "calendario"))
         tfArrival.setRightIcon(UIImage(named: "calendario"))
         tfPassengers.setRightIcon(UIImage(named: "passageiros"))
+        
+        setupDepartureArrival()
+        setupPassengers()
     }
     
-    func moveToNextField(_ view: UIView, nextFieldTag: Int) {
-        let nextResponder = view.superview?.viewWithTag(nextFieldTag) as UIResponder!
-        if (nextResponder != nil) {
-            nextResponder?.becomeFirstResponder()
+    fileprivate func setupDepartureArrival() {
+        // Departure
+        departurePicker = TimePickerView(frame: CGRect(x: 0.0, y: 0.0, width: view.frame.width, height: 258.0))
+        
+        departurePicker.btnDone.action = #selector(doneTimePickerClicked(_:))
+        departurePicker.btnCancel.action = #selector(cancelTimePickerClicked(_:))
+        departurePicker.pickerView.minimumDate = Date()
+        
+        tfDeparture.inputView = departurePicker
+        
+        // Arrival
+        
+        arrivalPicker = TimePickerView(frame: CGRect(x: 0.0, y: 0.0, width: view.frame.width, height: 258.0))
+        
+        arrivalPicker.btnDone.action = #selector(doneTimePickerClicked(_:))
+        arrivalPicker.btnCancel.action = #selector(cancelTimePickerClicked(_:))
+        
+        tfArrival.inputView = arrivalPicker
+    }
+    
+    fileprivate func setupPassengers() {
+        let options = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        tfPassengers.inputView = ListPickerView(tfPassengers, list: options, current: options.first)
+    }
+    
+    // MARK: Timepicker actions
+    
+    @objc func doneTimePickerClicked(_ sender: UIBarButtonItem?) {
+        if activeField == tfDeparture {
+            tfDeparture.text = DateHelper.stringFromDate(departurePicker.pickerView.date, format: "dd/MM/yyyy")
+            arrivalPicker.pickerView.minimumDate = departurePicker.pickerView.date
+            
+            tfArrival.isEnabled = true
+            
+            if departurePicker.pickerView.date.compare(arrivalPicker.pickerView.date) != .orderedAscending {
+                tfArrival.text = ""
+            }
         } else {
-            view.resignFirstResponder()
+            tfArrival.text = DateHelper.stringFromDate(arrivalPicker.pickerView.date, format: "dd/MM/yyyy")
+        }
+        
+        if let activeField = activeField {
+            activeField.resignFirstResponder()
+        }
+    }
+    
+    @objc func cancelTimePickerClicked(_ sender: UIBarButtonItem?) {
+        if let activeField = activeField {
+            activeField.resignFirstResponder()
         }
     }
     

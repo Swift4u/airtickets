@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0FE1241FF7822400E95C91 /* ListPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0FE1221FF7822400E95C91 /* ListPickerView.xib */; };
+		4C0FE1251FF7822400E95C91 /* ListPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE1231FF7822400E95C91 /* ListPickerView.swift */; };
+		4C0FE1291FF78F1100E95C91 /* TimePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0FE1271FF78F1100E95C91 /* TimePickerView.xib */; };
+		4C0FE12A1FF78F1100E95C91 /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE1281FF78F1100E95C91 /* TimePickerView.swift */; };
 		4C7D92631FF6487B00702823 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D92621FF6487B00702823 /* RootRouter.swift */; };
 		4C7D92661FF6491B00702823 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D92651FF6491B00702823 /* Flight.swift */; };
 		4C7D92681FF64D0700702823 /* Fare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D92671FF64D0700702823 /* Fare.swift */; };
@@ -59,6 +63,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C0FE1221FF7822400E95C91 /* ListPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListPickerView.xib; sourceTree = "<group>"; };
+		4C0FE1231FF7822400E95C91 /* ListPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPickerView.swift; sourceTree = "<group>"; };
+		4C0FE1271FF78F1100E95C91 /* TimePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimePickerView.xib; sourceTree = "<group>"; };
+		4C0FE1281FF78F1100E95C91 /* TimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
 		4C7D92621FF6487B00702823 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		4C7D92651FF6491B00702823 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		4C7D92671FF64D0700702823 /* Fare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fare.swift; sourceTree = "<group>"; };
@@ -125,6 +133,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C0FE1211FF7822400E95C91 /* ListPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				4C0FE1221FF7822400E95C91 /* ListPickerView.xib */,
+				4C0FE1231FF7822400E95C91 /* ListPickerView.swift */,
+			);
+			path = ListPickerView;
+			sourceTree = "<group>";
+		};
+		4C0FE1261FF78F1100E95C91 /* TimePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				4C0FE1271FF78F1100E95C91 /* TimePickerView.xib */,
+				4C0FE1281FF78F1100E95C91 /* TimePickerView.swift */,
+			);
+			path = TimePickerView;
+			sourceTree = "<group>";
+		};
 		4C7D925D1FF6477000702823 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +343,8 @@
 		4C7D92921FF656EF00702823 /* UIViews */ = {
 			isa = PBXGroup;
 			children = (
+				4C0FE1261FF78F1100E95C91 /* TimePickerView */,
+				4C0FE1211FF7822400E95C91 /* ListPickerView */,
 				4C7D92931FF6572200702823 /* LoadingSpinner */,
 			);
 			path = UIViews;
@@ -553,6 +581,8 @@
 				4CDEA30C1FF6F981007B643B /* Montserrat-Bold.ttf in Resources */,
 				4C7D92A71FF659DD00702823 /* MainSearch.storyboard in Resources */,
 				4C80F20B1FF5158F002D6A2F /* LaunchScreen.storyboard in Resources */,
+				4C0FE1291FF78F1100E95C91 /* TimePickerView.xib in Resources */,
+				4C0FE1241FF7822400E95C91 /* ListPickerView.xib in Resources */,
 				4CDEA30D1FF6F981007B643B /* Montserrat-Regular.ttf in Resources */,
 				4CDEA30E1FF6F981007B643B /* Montserrat-Medium.ttf in Resources */,
 				4C80F2081FF5158F002D6A2F /* Assets.xcassets in Resources */,
@@ -641,6 +671,7 @@
 				4C7D92891FF6554300702823 /* DateHelper.swift in Sources */,
 				4C7D92A91FF65CA500702823 /* UIColor+Pallet.swift in Sources */,
 				4C7D929C1FF6580E00702823 /* MainSearchContract.swift in Sources */,
+				4C0FE1251FF7822400E95C91 /* ListPickerView.swift in Sources */,
 				4C7D92831FF6547100702823 /* NibLoadableView.swift in Sources */,
 				4C8BF8991FF7127100EDE30B /* SearchButton.swift in Sources */,
 				4C7D929F1FF6583B00702823 /* MainSearchInteractor.swift in Sources */,
@@ -667,6 +698,7 @@
 				4C7D927F1FF6537B00702823 /* UIStoryboard.swift in Sources */,
 				4C80F2011FF5158F002D6A2F /* AppDelegate.swift in Sources */,
 				4C7D92681FF64D0700702823 /* Fare.swift in Sources */,
+				4C0FE12A1FF78F1100E95C91 /* TimePickerView.swift in Sources */,
 				4C7D92751FF6512000702823 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
