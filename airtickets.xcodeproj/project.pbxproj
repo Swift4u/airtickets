@@ -11,6 +11,18 @@
 		4C0FE1251FF7822400E95C91 /* ListPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE1231FF7822400E95C91 /* ListPickerView.swift */; };
 		4C0FE1291FF78F1100E95C91 /* TimePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0FE1271FF78F1100E95C91 /* TimePickerView.xib */; };
 		4C0FE12A1FF78F1100E95C91 /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE1281FF78F1100E95C91 /* TimePickerView.swift */; };
+		4C0FE1331FF798DA00E95C91 /* AirportFilterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE1321FF798DA00E95C91 /* AirportFilterContract.swift */; };
+		4C0FE1351FF799C400E95C91 /* AirportFilterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE1341FF799C400E95C91 /* AirportFilterInteractor.swift */; };
+		4C0FE1381FF79B1900E95C91 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C0FE1371FF79B1800E95C91 /* airports.json */; };
+		4C0FE13A1FF79E4B00E95C91 /* AirportFilterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE1391FF79E4B00E95C91 /* AirportFilterPresenter.swift */; };
+		4C0FE13C1FF79F5900E95C91 /* AirportFilterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE13B1FF79F5900E95C91 /* AirportFilterRouter.swift */; };
+		4C0FE13E1FF79FE500E95C91 /* AirportFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE13D1FF79FE500E95C91 /* AirportFilterViewController.swift */; };
+		4C0FE1401FF7A0AC00E95C91 /* AirportFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0FE13F1FF7A0AC00E95C91 /* AirportFilter.storyboard */; };
+		4C0FE1421FF7A20200E95C91 /* BaseTableContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE1411FF7A20200E95C91 /* BaseTableContract.swift */; };
+		4C0FE1441FF7A23A00E95C91 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE1431FF7A23A00E95C91 /* BaseTableViewController.swift */; };
+		4C0FE1461FF83BFA00E95C91 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE1451FF83BFA00E95C91 /* Dictionary.swift */; };
+		4C0FE1481FF83D6300E95C91 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE1471FF83D6300E95C91 /* BaseRequest.swift */; };
+		4C0FE14A1FF83DBD00E95C91 /* FlightRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FE1491FF83DBD00E95C91 /* FlightRequest.swift */; };
 		4C7D92631FF6487B00702823 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D92621FF6487B00702823 /* RootRouter.swift */; };
 		4C7D92661FF6491B00702823 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D92651FF6491B00702823 /* Flight.swift */; };
 		4C7D92681FF64D0700702823 /* Fare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D92671FF64D0700702823 /* Fare.swift */; };
@@ -67,6 +79,18 @@
 		4C0FE1231FF7822400E95C91 /* ListPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPickerView.swift; sourceTree = "<group>"; };
 		4C0FE1271FF78F1100E95C91 /* TimePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimePickerView.xib; sourceTree = "<group>"; };
 		4C0FE1281FF78F1100E95C91 /* TimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
+		4C0FE1321FF798DA00E95C91 /* AirportFilterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportFilterContract.swift; sourceTree = "<group>"; };
+		4C0FE1341FF799C400E95C91 /* AirportFilterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportFilterInteractor.swift; sourceTree = "<group>"; };
+		4C0FE1371FF79B1800E95C91 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		4C0FE1391FF79E4B00E95C91 /* AirportFilterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportFilterPresenter.swift; sourceTree = "<group>"; };
+		4C0FE13B1FF79F5900E95C91 /* AirportFilterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportFilterRouter.swift; sourceTree = "<group>"; };
+		4C0FE13D1FF79FE500E95C91 /* AirportFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportFilterViewController.swift; sourceTree = "<group>"; };
+		4C0FE13F1FF7A0AC00E95C91 /* AirportFilter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AirportFilter.storyboard; sourceTree = "<group>"; };
+		4C0FE1411FF7A20200E95C91 /* BaseTableContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableContract.swift; sourceTree = "<group>"; };
+		4C0FE1431FF7A23A00E95C91 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		4C0FE1451FF83BFA00E95C91 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		4C0FE1471FF83D6300E95C91 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		4C0FE1491FF83DBD00E95C91 /* FlightRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRequest.swift; sourceTree = "<group>"; };
 		4C7D92621FF6487B00702823 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		4C7D92651FF6491B00702823 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		4C7D92671FF64D0700702823 /* Fare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fare.swift; sourceTree = "<group>"; };
@@ -151,6 +175,67 @@
 			path = TimePickerView;
 			sourceTree = "<group>";
 		};
+		4C0FE12C1FF7964A00E95C91 /* AirportFilter */ = {
+			isa = PBXGroup;
+			children = (
+				4C0FE12D1FF7964A00E95C91 /* Contract */,
+				4C0FE12F1FF7964A00E95C91 /* Interactor */,
+				4C0FE12E1FF7964A00E95C91 /* Presenter */,
+				4C0FE1311FF7964A00E95C91 /* Router */,
+				4C0FE1301FF7964A00E95C91 /* View */,
+			);
+			path = AirportFilter;
+			sourceTree = "<group>";
+		};
+		4C0FE12D1FF7964A00E95C91 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				4C0FE1321FF798DA00E95C91 /* AirportFilterContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		4C0FE12E1FF7964A00E95C91 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4C0FE1391FF79E4B00E95C91 /* AirportFilterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4C0FE12F1FF7964A00E95C91 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4C0FE1341FF799C400E95C91 /* AirportFilterInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4C0FE1301FF7964A00E95C91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C0FE13F1FF7A0AC00E95C91 /* AirportFilter.storyboard */,
+				4C0FE13D1FF79FE500E95C91 /* AirportFilterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C0FE1311FF7964A00E95C91 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4C0FE13B1FF79F5900E95C91 /* AirportFilterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4C0FE1361FF79B0B00E95C91 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4C0FE1371FF79B1800E95C91 /* airports.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		4C7D925D1FF6477000702823 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +251,7 @@
 			children = (
 				4C80F2071FF5158F002D6A2F /* Assets.xcassets */,
 				4CDEA3071FF6F955007B643B /* Fonts */,
+				4C0FE1361FF79B0B00E95C91 /* Data */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -184,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				4C7D928B1FF6563100702823 /* Base */,
+				4C0FE12C1FF7964A00E95C91 /* AirportFilter */,
 				4C7D928A1FF6561D00702823 /* MainSearch */,
 			);
 			path = Modules;
@@ -208,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				4C7D92651FF6491B00702823 /* Flight.swift */,
+				4C0FE1491FF83DBD00E95C91 /* FlightRequest.swift */,
 				4C7D92671FF64D0700702823 /* Fare.swift */,
 				4C7D92AE1FF663F800702823 /* ResultSearch.swift */,
 			);
@@ -255,6 +343,7 @@
 				4C7D92A81FF65CA500702823 /* UIColor+Pallet.swift */,
 				4C7D92AA1FF65CD600702823 /* UIFont+Utils.swift */,
 				4C7D92AC1FF65D1400702823 /* UIImage+Icons.swift */,
+				4C0FE1451FF83BFA00E95C91 /* Dictionary.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -328,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				4C7D92901FF6567500702823 /* BaseViewController.swift */,
+				4C0FE1431FF7A23A00E95C91 /* BaseTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				4C7D928E1FF6565000702823 /* BaseContract.swift */,
+				4C0FE1411FF7A20200E95C91 /* BaseTableContract.swift */,
 			);
 			path = Contract;
 			sourceTree = "<group>";
@@ -403,6 +494,7 @@
 			isa = PBXGroup;
 			children = (
 				4C7D92B11FF6765900702823 /* ResponseErrors.swift */,
+				4C0FE1471FF83D6300E95C91 /* BaseRequest.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -584,8 +676,10 @@
 				4C0FE1291FF78F1100E95C91 /* TimePickerView.xib in Resources */,
 				4C0FE1241FF7822400E95C91 /* ListPickerView.xib in Resources */,
 				4CDEA30D1FF6F981007B643B /* Montserrat-Regular.ttf in Resources */,
+				4C0FE1401FF7A0AC00E95C91 /* AirportFilter.storyboard in Resources */,
 				4CDEA30E1FF6F981007B643B /* Montserrat-Medium.ttf in Resources */,
 				4C80F2081FF5158F002D6A2F /* Assets.xcassets in Resources */,
+				4C0FE1381FF79B1900E95C91 /* airports.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,21 +763,28 @@
 			files = (
 				4C7D92AF1FF663F900702823 /* ResultSearch.swift in Sources */,
 				4C7D92891FF6554300702823 /* DateHelper.swift in Sources */,
+				4C0FE1441FF7A23A00E95C91 /* BaseTableViewController.swift in Sources */,
 				4C7D92A91FF65CA500702823 /* UIColor+Pallet.swift in Sources */,
 				4C7D929C1FF6580E00702823 /* MainSearchContract.swift in Sources */,
+				4C0FE14A1FF83DBD00E95C91 /* FlightRequest.swift in Sources */,
 				4C0FE1251FF7822400E95C91 /* ListPickerView.swift in Sources */,
 				4C7D92831FF6547100702823 /* NibLoadableView.swift in Sources */,
 				4C8BF8991FF7127100EDE30B /* SearchButton.swift in Sources */,
+				4C0FE1461FF83BFA00E95C91 /* Dictionary.swift in Sources */,
 				4C7D929F1FF6583B00702823 /* MainSearchInteractor.swift in Sources */,
 				4C7D92951FF6573300702823 /* LoadingSpinner.swift in Sources */,
 				4C7D92A31FF6598A00702823 /* MainSearchRouter.swift in Sources */,
+				4C0FE13E1FF79FE500E95C91 /* AirportFilterViewController.swift in Sources */,
 				4C7D926C1FF64F1D00702823 /* Airport.swift in Sources */,
+				4C0FE1331FF798DA00E95C91 /* AirportFilterContract.swift in Sources */,
 				4C7D92871FF654B900702823 /* StoryboardLoadable.swift in Sources */,
 				4C7D92791FF6523700702823 /* AirportLocalDataManager.swift in Sources */,
 				4C7D92B21FF6765900702823 /* ResponseErrors.swift in Sources */,
 				4C7D927B1FF6529800702823 /* FlightApiDataManager.swift in Sources */,
 				4C7D928F1FF6565000702823 /* BaseContract.swift in Sources */,
+				4C0FE13C1FF79F5900E95C91 /* AirportFilterRouter.swift in Sources */,
 				4C7D92911FF6567500702823 /* BaseViewController.swift in Sources */,
+				4C0FE13A1FF79E4B00E95C91 /* AirportFilterPresenter.swift in Sources */,
 				4C7D92A51FF659B100702823 /* MainSearchViewController.swift in Sources */,
 				4C7D92AD1FF65D1400702823 /* UIImage+Icons.swift in Sources */,
 				4C7D92811FF653B800702823 /* UIViewController.swift in Sources */,
@@ -696,7 +797,10 @@
 				4CDEA3061FF6F52C007B643B /* SearchTextField.swift in Sources */,
 				4C8BF89C1FF7133100EDE30B /* ImageHelper.swift in Sources */,
 				4C7D927F1FF6537B00702823 /* UIStoryboard.swift in Sources */,
+				4C0FE1421FF7A20200E95C91 /* BaseTableContract.swift in Sources */,
+				4C0FE1351FF799C400E95C91 /* AirportFilterInteractor.swift in Sources */,
 				4C80F2011FF5158F002D6A2F /* AppDelegate.swift in Sources */,
+				4C0FE1481FF83D6300E95C91 /* BaseRequest.swift in Sources */,
 				4C7D92681FF64D0700702823 /* Fare.swift in Sources */,
 				4C0FE12A1FF78F1100E95C91 /* TimePickerView.swift in Sources */,
 				4C7D92751FF6512000702823 /* Constants.swift in Sources */,

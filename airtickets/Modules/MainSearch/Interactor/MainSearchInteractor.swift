@@ -24,13 +24,13 @@ class MainSearchInteractor {
 
 extension MainSearchInteractor: MainSearchUseCase {
     
-    func searchFlights() {
+    func searchFlights(_ request: FlightRequest) {
         if Reachability()?.currentReachabilityStatus == .notReachable {
             output?.onSearchFlightsFailure(message: "NO_INTERNET")
             return
         }
         
-        apiDataManager.searchFlights { (response, error) in
+        apiDataManager.searchFlights(request) { (response, error) in
             if let response = response {
                 self.output?.onSearchFlightsSuccess(flights: response)
             } else {

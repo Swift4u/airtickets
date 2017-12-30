@@ -18,10 +18,12 @@ class BaseViewController: UIViewController, BaseView {
     // MARK: Methods
     
     func showLoading() {
-        LoadingSpinner.show(NSLocalizedString("loading", comment: ""))
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        LoadingSpinner.show("LOADING")
     }
     
     func hideLoading() {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
         LoadingSpinner.hide()
     }
     

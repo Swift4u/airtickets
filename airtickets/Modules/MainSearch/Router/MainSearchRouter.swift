@@ -40,5 +40,20 @@ class MainSearchRouter {
 }
 
 extension MainSearchRouter: MainSearchWireframe {
-    // TODO: Implement wireframe methods
+    
+    func presentAirportFilter() {
+        let airportFilterViewController = AirportFilterRouter.setupModule()
+        let navigationController = UINavigationController(rootViewController: airportFilterViewController)
+        
+        airportFilterViewController.mainSearchRouter = self
+        
+        view?.present(navigationController, animated: true, completion: nil)
+    }
+    
+    func onAirportSelected(_ airport: Airport) {
+        if let viewController = view as? MainSearchViewController {
+            viewController.onAirportSelected(airport)
+        }
+    }
+
 }

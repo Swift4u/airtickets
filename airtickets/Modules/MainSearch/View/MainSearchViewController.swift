@@ -8,14 +8,16 @@
 
 import UIKit
 
-class MainSearchViewController: BaseViewController, StoryboardLoadable {
+class MainSearchViewController: BaseViewController, StoryboardLoadable, UITextFieldDelegate {
     
     // MARK: Properties
     
     var presenter: MainSearchPresentation?
     var departurePicker: TimePickerView!
     var arrivalPicker: TimePickerView!
-    
+    var origin: Airport?
+    var destination: Airport?
+
     // MARK: IBOutlets
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -48,7 +50,12 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable {
     // MARK: IBActions
     
     @IBAction func onSearchFlights(_ sender: UIButton?) {
-        presenter?.didClickSearchButton()
+        guard let origin = origin, let destination = destination, let numPassengers = tfPassengers.text else {
+            showError("INVALID")
+            return
+        }
+        
+        presenter?.didClickSearchButton(origin: origin, destination: destination, departure: departurePicker.pickerView.date, arrival: arrivalPicker.pickerView.date, adults: numPassengers)
     }
     
     // MARK: Private
@@ -77,7 +84,6 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable {
         tfDeparture.inputView = departurePicker
         
         // Arrival
-        
         arrivalPicker = TimePickerView(frame: CGRect(x: 0.0, y: 0.0, width: view.frame.width, height: 258.0))
         
         arrivalPicker.btnDone.action = #selector(doneTimePickerClicked(_:))
@@ -118,10 +124,39 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable {
         }
     }
     
+    // MARK: Textfield delegates
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        activeField = textField
+        
+        if textField == tfOrigin || textField == tfDestination {
+            presenter?.didClickAirportFilter()
+            return false
+        }
+        
+        return true
+    }
+    
 }
 
-extension  MainSearchViewController: MainSearchView {
+extension MainSearchViewController: MainSearchView {
     
-    //TODO: Implement MainSearchView methods here
+    func onAirportSelected(_ airport: Airport) {
+        var airportText: String = ""
+        
+        if let iata = airport.iata, let name = airport.name, let city = airport.city {
+            airportText = "\(iata) - \(name), \(city)"
+        }
+        
+        activeField?.text = airportText
+
+        if activeField == tfOrigin {
+            origin = airport
+        } else {
+            destination = airport
+        }
+        
+        activeField = nil
+    }
     
 }

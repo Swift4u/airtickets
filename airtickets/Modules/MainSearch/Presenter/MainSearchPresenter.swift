@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ObjectMapper
 
 class MainSearchPresenter {
     
@@ -20,9 +21,22 @@ class MainSearchPresenter {
 
 extension MainSearchPresenter: MainSearchPresentation {
     
-    func didClickSearchButton() {
-        //interactor?.searchFlights()
+    func didClickSearchButton(origin: Airport, destination: Airport, departure: Date, arrival: Date, adults: String) {
         view?.showLoading()
+        
+        let request = FlightRequest()
+        
+        request.origin = origin.iata
+        request.destination = destination.iata
+        request.departure = departure
+        request.arrival = arrival
+        request.adults = adults
+        
+        interactor?.searchFlights(request)
+    }
+    
+    func didClickAirportFilter() {
+        router?.presentAirportFilter()
     }
     
     //TODO: Implement other methods from presenter->view here
@@ -33,6 +47,10 @@ extension MainSearchPresenter: MainSearchInteractorOutput {
     
     func onSearchFlightsSuccess(flights: [Flight]) {
         view?.hideLoading()
+        
+        for flight: Flight in flights {
+            print(flight.airline)
+        }
     }
     
     func onSearchFlightsFailure(message: String?) {

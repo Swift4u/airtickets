@@ -13,13 +13,11 @@ import AlamofireObjectMapper
 
 class FlightApiDataManager: NSObject {
     
-    func searchFlights(completion: @escaping (_ response: [Flight]?, _ error: Error?) -> Void) {
+    func searchFlights(_ params: FlightRequest, completion: @escaping (_ response: [Flight]?, _ error: Error?) -> Void) {
         let url = Constants.URL.flightSearch
         
-        let params: [String : Any] = ["app_id": Constants.ApiKeys.appId, "app_key": Constants.ApiKeys.appKey, "source": "CNF", "destination": "GRU", "dateofdeparture": "20180126", "dateofarrival": "20180207", "adults": 2, "seatingclass": "E", "children": 0, "infants": 0, "counter": 100]
-        
         Alamofire
-            .request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil)
+            .request(url, method: .get, parameters: params.toJSON(), encoding: URLEncoding.default, headers: nil)
             .responseObject(completionHandler: { (response: DataResponse<ResultSearch>) in
                 if let err = response.result.value?.data?.error {
                     let objError = NSError(domain: "api", code: 200, userInfo: [NSLocalizedDescriptionKey : err.error ?? ""])

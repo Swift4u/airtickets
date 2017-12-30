@@ -32,6 +32,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="X82-17-wK8" id="skb-FA-OHn"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="IATA Destino" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfY-Dt-hvm" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
                                                 <rect key="frame" x="19" y="95" width="337" height="54"/>
@@ -41,6 +44,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="X82-17-wK8" id="ect-7C-k45"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Data da ida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OW0-5z-XF6" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
                                                 <rect key="frame" x="19" y="170" width="161" height="54"/>

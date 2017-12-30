@@ -24,6 +24,9 @@ class Flight: Mappable {
     var returnFlights: [Flight]?
     
     required init?(map: Map) {
+    }
+    
+    func mapping(map: Map) {
         flightNo <- map["flightno"]
         origin <- map["origin"]
         destination <- map["destination"]
@@ -35,9 +38,6 @@ class Flight: Mappable {
         airline <- map["airline"]
         fare <- map["fare"]
         returnFlights <- map["returnfl"]
-    }
-    
-    func mapping(map: Map) {
     }
     
     let dateTransform = TransformOf<Date, String>(fromJSON: { (value: String?) -> Date? in

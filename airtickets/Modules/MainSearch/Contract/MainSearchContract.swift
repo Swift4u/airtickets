@@ -9,15 +9,16 @@
 import Foundation
 
 protocol MainSearchView: BaseView {
-    
+    func onAirportSelected(_ airport: Airport)
 }
 
 protocol MainSearchPresentation: class {
-    func didClickSearchButton()
+    func didClickSearchButton(origin: Airport, destination: Airport, departure: Date, arrival: Date, adults: String)
+    func didClickAirportFilter()
 }
 
 protocol MainSearchUseCase: class {
-    func searchFlights()
+    func searchFlights(_ request: FlightRequest)
 }
 
 protocol MainSearchInteractorOutput: class {
@@ -26,5 +27,6 @@ protocol MainSearchInteractorOutput: class {
 }
 
 protocol MainSearchWireframe: class {
-    
+    func presentAirportFilter()
+    func onAirportSelected(_ airport: Airport)
 }

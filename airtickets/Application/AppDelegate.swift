@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        setupNavigationBarFont()
+        setupNavigationBar()
         setupBackButtonAppearance()
         presentInitialScreen()
         return true
@@ -48,16 +48,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     
-    func presentInitialScreen() {
+    fileprivate func presentInitialScreen() {
         let rootRouter = RootRouter()
         rootRouter.presentFirstScreen(inWindow: window!)
     }
     
-    fileprivate func setupNavigationBarFont() {
+    fileprivate func setupNavigationBar() {
         let navigationBarAppearace = UINavigationBar.appearance()
-        navigationBarAppearace.tintColor = .black
-        navigationBarAppearace.barTintColor = .white
-        navigationBarAppearace.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black]
+        navigationBarAppearace.tintColor = UIColor.white
+        navigationBarAppearace.barTintColor = UIColor.topaz
+        navigationBarAppearace.isTranslucent = false
+        navigationBarAppearace.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: Constants.Font.MontserratBold, size: 16.0) as Any]
     }
     
     fileprivate func setupBackButtonAppearance() {
