@@ -35,9 +35,9 @@ enum Constants {
     }
     
     enum Font {
-        static let TrebuchetMS = "TrebuchetMS"
-        static let TrebuchetMSItalic = "TrebuchetMS-Italic"
-        static let TrebuchetMSBold = "TrebuchetMS-Bold"
+        static let MontserratRegular = "Montserrat-Regular"
+        static let MontserratBold = "Montserrat-Bold"
+        static let MontserratMedium = "Montserrat-Medium"
     }
     
 }

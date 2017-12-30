@@ -17,6 +17,12 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable {
     // MARK: IBOutlets
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var innerView: UIView!
+    @IBOutlet weak var tfOrigin: SearchTextField!
+    @IBOutlet weak var tfDestination: SearchTextField!
+    @IBOutlet weak var tfDeparture: SearchTextField!
+    @IBOutlet weak var tfArrival: SearchTextField!
+    @IBOutlet weak var tfPassengers: SearchTextField!
     
     // MARK: Lifecycle
     
@@ -29,6 +35,7 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupKeyboardNotifications(with: scrollView)
+        hideNavigationBarAnimated(true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -45,7 +52,13 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable {
     // MARK: Private
     
     private func setupView() {
-        // TODO: Setup view here
+        view.backgroundColor = UIColor.paleGrey
+        
+        tfOrigin.setRightIcon(UIImage(named: "pin"))
+        tfDestination.setRightIcon(UIImage(named: "pin"))
+        tfDeparture.setRightIcon(UIImage(named: "calendario"))
+        tfArrival.setRightIcon(UIImage(named: "calendario"))
+        tfPassengers.setRightIcon(UIImage(named: "passageiros"))
     }
     
     func moveToNextField(_ view: UIView, nextFieldTag: Int) {

@@ -18,37 +18,143 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qtj-Yc-WEi">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qtj-Yc-WEi">
+                                <rect key="frame" x="0.0" y="138" width="375" height="529"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNW-05-BAw">
-                                        <rect key="frame" x="102" y="46" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="onSearchFlights:" destination="X82-17-wK8" eventType="touchUpInside" id="oMu-MJ-T7a"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckR-fM-Wpx">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="529"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="IATA Origem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8UW-Nb-c1w" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="20" width="337" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="tEh-Ei-T4X"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="IATA Destino" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfY-Dt-hvm" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="95" width="337" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="9R3-x4-h35"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Data da ida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OW0-5z-XF6" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="170" width="161" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="kAa-TA-kmO"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Data da volta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLK-p6-V3f" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="170" width="161" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="6QT-Ii-JSn"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Quantidade de passageiros" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OoF-Of-1NU" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="245" width="337" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="2QI-C2-OrL"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oc-n6-cnH" customClass="SearchButton" customModule="airtickets" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="320" width="337" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="pmO-Id-DuB"/>
+                                                </constraints>
+                                                <state key="normal" title="Pesquisar passagem"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="JLK-p6-V3f" firstAttribute="width" secondItem="OW0-5z-XF6" secondAttribute="width" id="6Yn-Y1-zmB"/>
+                                            <constraint firstItem="OW0-5z-XF6" firstAttribute="top" secondItem="pfY-Dt-hvm" secondAttribute="bottom" constant="21" id="8af-Wl-u3d"/>
+                                            <constraint firstItem="3oc-n6-cnH" firstAttribute="top" secondItem="OoF-Of-1NU" secondAttribute="bottom" constant="21" id="IiP-vB-Kak"/>
+                                            <constraint firstItem="8UW-Nb-c1w" firstAttribute="top" secondItem="ckR-fM-Wpx" secondAttribute="top" constant="20" id="LdL-BG-K1U"/>
+                                            <constraint firstItem="JLK-p6-V3f" firstAttribute="leading" secondItem="OW0-5z-XF6" secondAttribute="trailing" constant="15" id="M2C-IX-cWw"/>
+                                            <constraint firstItem="OW0-5z-XF6" firstAttribute="leading" secondItem="ckR-fM-Wpx" secondAttribute="leading" constant="19" id="RIP-74-LlG"/>
+                                            <constraint firstItem="JLK-p6-V3f" firstAttribute="top" secondItem="pfY-Dt-hvm" secondAttribute="bottom" constant="21" id="UEx-3C-qQO"/>
+                                            <constraint firstItem="3oc-n6-cnH" firstAttribute="leading" secondItem="ckR-fM-Wpx" secondAttribute="leading" constant="19" id="asO-CD-aN4"/>
+                                            <constraint firstItem="pfY-Dt-hvm" firstAttribute="top" secondItem="8UW-Nb-c1w" secondAttribute="bottom" constant="21" id="bgs-Pq-t6h"/>
+                                            <constraint firstAttribute="trailing" secondItem="pfY-Dt-hvm" secondAttribute="trailing" constant="19" id="bhK-bp-0FM"/>
+                                            <constraint firstAttribute="trailing" secondItem="8UW-Nb-c1w" secondAttribute="trailing" constant="19" id="cvs-2j-cdK"/>
+                                            <constraint firstItem="OoF-Of-1NU" firstAttribute="top" secondItem="OW0-5z-XF6" secondAttribute="bottom" constant="21" id="deY-xF-pe4"/>
+                                            <constraint firstAttribute="trailing" secondItem="JLK-p6-V3f" secondAttribute="trailing" constant="19" id="eMb-3e-O56"/>
+                                            <constraint firstItem="OoF-Of-1NU" firstAttribute="leading" secondItem="ckR-fM-Wpx" secondAttribute="leading" constant="19" id="elR-E0-dJy"/>
+                                            <constraint firstAttribute="trailing" secondItem="3oc-n6-cnH" secondAttribute="trailing" constant="19" id="fdq-um-9sE"/>
+                                            <constraint firstItem="JLK-p6-V3f" firstAttribute="leading" secondItem="OW0-5z-XF6" secondAttribute="trailing" constant="15" id="g2H-dm-h6B"/>
+                                            <constraint firstItem="pfY-Dt-hvm" firstAttribute="leading" secondItem="ckR-fM-Wpx" secondAttribute="leading" constant="19" id="i0Q-Qh-Gf0"/>
+                                            <constraint firstAttribute="trailing" secondItem="OoF-Of-1NU" secondAttribute="trailing" constant="19" id="uIa-O7-xsH"/>
+                                            <constraint firstItem="8UW-Nb-c1w" firstAttribute="leading" secondItem="ckR-fM-Wpx" secondAttribute="leading" constant="19" id="uWI-ZD-HR9"/>
+                                            <constraint firstAttribute="height" priority="250" constant="529" id="xLI-sG-DSI"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ckR-fM-Wpx" secondAttribute="trailing" id="O0g-wd-bnx"/>
+                                    <constraint firstAttribute="bottom" secondItem="ckR-fM-Wpx" secondAttribute="bottom" id="YGd-Ue-ZG0"/>
+                                    <constraint firstItem="ckR-fM-Wpx" firstAttribute="top" secondItem="Qtj-Yc-WEi" secondAttribute="top" id="YM1-65-hwf"/>
+                                    <constraint firstItem="ckR-fM-Wpx" firstAttribute="leading" secondItem="Qtj-Yc-WEi" secondAttribute="leading" id="vqw-Az-haE"/>
+                                </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuQ-sF-XaF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="AKM-gp-1gA">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="AKM-gp-1gA" secondAttribute="trailing" id="9F9-eP-uo0"/>
+                                    <constraint firstAttribute="bottom" secondItem="AKM-gp-1gA" secondAttribute="bottom" id="9kz-5U-lr5"/>
+                                    <constraint firstItem="AKM-gp-1gA" firstAttribute="top" secondItem="vuQ-sF-XaF" secondAttribute="top" id="FIy-co-xko"/>
+                                    <constraint firstItem="AKM-gp-1gA" firstAttribute="leading" secondItem="vuQ-sF-XaF" secondAttribute="leading" id="WMD-Zj-NBQ"/>
+                                    <constraint firstAttribute="height" constant="138" id="kDX-Qg-SjO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Qtj-Yc-WEi" firstAttribute="top" secondItem="dWo-zf-XV8" secondAttribute="top" id="3ke-1a-WIY"/>
-                            <constraint firstItem="Qtj-Yc-WEi" firstAttribute="trailing" secondItem="dWo-zf-XV8" secondAttribute="trailing" id="gXz-K8-gXH"/>
-                            <constraint firstItem="Qtj-Yc-WEi" firstAttribute="leading" secondItem="dWo-zf-XV8" secondAttribute="leading" id="lFy-Ja-9A6"/>
-                            <constraint firstItem="Qtj-Yc-WEi" firstAttribute="bottom" secondItem="dWo-zf-XV8" secondAttribute="bottom" id="sqG-9C-4OO"/>
+                            <constraint firstItem="Qtj-Yc-WEi" firstAttribute="trailing" secondItem="dWo-zf-XV8" secondAttribute="trailing" id="5hk-KU-VLz"/>
+                            <constraint firstItem="Qtj-Yc-WEi" firstAttribute="leading" secondItem="dWo-zf-XV8" secondAttribute="leading" id="IX3-DP-TI5"/>
+                            <constraint firstItem="ckR-fM-Wpx" firstAttribute="width" secondItem="ca3-Gv-ROX" secondAttribute="width" id="Ncf-zZ-4Xu"/>
+                            <constraint firstItem="Qtj-Yc-WEi" firstAttribute="top" secondItem="vuQ-sF-XaF" secondAttribute="bottom" id="WX1-W1-WtP"/>
+                            <constraint firstItem="vuQ-sF-XaF" firstAttribute="top" secondItem="ca3-Gv-ROX" secondAttribute="top" id="acf-u6-Kuk"/>
+                            <constraint firstItem="vuQ-sF-XaF" firstAttribute="leading" secondItem="dWo-zf-XV8" secondAttribute="leading" id="r9X-Cs-CGU"/>
+                            <constraint firstItem="vuQ-sF-XaF" firstAttribute="trailing" secondItem="dWo-zf-XV8" secondAttribute="trailing" id="x2Y-LS-bXZ"/>
+                            <constraint firstItem="Qtj-Yc-WEi" firstAttribute="bottom" secondItem="dWo-zf-XV8" secondAttribute="bottom" id="xAJ-mM-RAF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dWo-zf-XV8"/>
                     </view>
                     <navigationItem key="navigationItem" id="ccV-YL-xny"/>
                     <connections>
+                        <outlet property="innerView" destination="ckR-fM-Wpx" id="asB-Jl-QKD"/>
                         <outlet property="scrollView" destination="Qtj-Yc-WEi" id="O1D-Uc-voT"/>
+                        <outlet property="tfArrival" destination="JLK-p6-V3f" id="gat-fW-maB"/>
+                        <outlet property="tfDeparture" destination="OW0-5z-XF6" id="zgh-eY-XoP"/>
+                        <outlet property="tfDestination" destination="pfY-Dt-hvm" id="4ir-By-eT7"/>
+                        <outlet property="tfOrigin" destination="8UW-Nb-c1w" id="Gi3-JI-9Ab"/>
+                        <outlet property="tfPassengers" destination="OoF-Of-1NU" id="Zoy-Pn-sN4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQY-fc-yAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="125"/>
+            <point key="canvasLocation" x="40.799999999999997" y="124.58770614692655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="banner" width="375" height="138"/>
+    </resources>
 </document>

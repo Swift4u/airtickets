@@ -39,6 +39,12 @@
 		4C80F2081FF5158F002D6A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C80F2071FF5158F002D6A2F /* Assets.xcassets */; };
 		4C80F20B1FF5158F002D6A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C80F2091FF5158F002D6A2F /* LaunchScreen.storyboard */; };
 		4C80F2161FF51590002D6A2F /* airticketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C80F2151FF51590002D6A2F /* airticketsTests.swift */; };
+		4C8BF8991FF7127100EDE30B /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BF8981FF7127100EDE30B /* SearchButton.swift */; };
+		4C8BF89C1FF7133100EDE30B /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BF89B1FF7133100EDE30B /* ImageHelper.swift */; };
+		4CDEA3061FF6F52C007B643B /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEA3051FF6F52C007B643B /* SearchTextField.swift */; };
+		4CDEA30C1FF6F981007B643B /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA3091FF6F980007B643B /* Montserrat-Bold.ttf */; };
+		4CDEA30D1FF6F981007B643B /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA30A1FF6F980007B643B /* Montserrat-Regular.ttf */; };
+		4CDEA30E1FF6F981007B643B /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA30B1FF6F980007B643B /* Montserrat-Medium.ttf */; };
 		78427B4CD7425C68D40D224A /* Pods_airtickets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADD3479D3EB4E45D16A3DF7 /* Pods_airtickets.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +95,12 @@
 		4C80F2111FF51590002D6A2F /* airticketsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = airticketsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C80F2151FF51590002D6A2F /* airticketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airticketsTests.swift; sourceTree = "<group>"; };
 		4C80F2171FF51590002D6A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C8BF8981FF7127100EDE30B /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
+		4C8BF89B1FF7133100EDE30B /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		4CDEA3051FF6F52C007B643B /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		4CDEA3091FF6F980007B643B /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		4CDEA30A1FF6F980007B643B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		4CDEA30B1FF6F980007B643B /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		6ADD3479D3EB4E45D16A3DF7 /* Pods_airtickets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_airtickets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A075CA3651B098E8190FC764 /* Pods-airtickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airtickets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-airtickets/Pods-airtickets.debug.xcconfig"; sourceTree = "<group>"; };
 		C3F9C0FCCF508B46909B912C /* Pods-airtickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airtickets.release.xcconfig"; path = "Pods/Target Support Files/Pods-airtickets/Pods-airtickets.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				4C80F2071FF5158F002D6A2F /* Assets.xcassets */,
+				4CDEA3071FF6F955007B643B /* Fonts */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -224,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				4C7D92881FF6554300702823 /* DateHelper.swift */,
+				4C8BF89B1FF7133100EDE30B /* ImageHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -231,6 +245,8 @@
 		4C7D92721FF650B600702823 /* IBDesignables */ = {
 			isa = PBXGroup;
 			children = (
+				4CDEA3051FF6F52C007B643B /* SearchTextField.swift */,
+				4C8BF8981FF7127100EDE30B /* SearchButton.swift */,
 			);
 			path = IBDesignables;
 			sourceTree = "<group>";
@@ -413,6 +429,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		4CDEA3071FF6F955007B643B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEA3081FF6F95F007B643B /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4CDEA3081FF6F95F007B643B /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEA3091FF6F980007B643B /* Montserrat-Bold.ttf */,
+				4CDEA30B1FF6F980007B643B /* Montserrat-Medium.ttf */,
+				4CDEA30A1FF6F980007B643B /* Montserrat-Regular.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
 		A6C0A6090EFDA673F4D5710B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,8 +550,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDEA30C1FF6F981007B643B /* Montserrat-Bold.ttf in Resources */,
 				4C7D92A71FF659DD00702823 /* MainSearch.storyboard in Resources */,
 				4C80F20B1FF5158F002D6A2F /* LaunchScreen.storyboard in Resources */,
+				4CDEA30D1FF6F981007B643B /* Montserrat-Regular.ttf in Resources */,
+				4CDEA30E1FF6F981007B643B /* Montserrat-Medium.ttf in Resources */,
 				4C80F2081FF5158F002D6A2F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,6 +642,7 @@
 				4C7D92A91FF65CA500702823 /* UIColor+Pallet.swift in Sources */,
 				4C7D929C1FF6580E00702823 /* MainSearchContract.swift in Sources */,
 				4C7D92831FF6547100702823 /* NibLoadableView.swift in Sources */,
+				4C8BF8991FF7127100EDE30B /* SearchButton.swift in Sources */,
 				4C7D929F1FF6583B00702823 /* MainSearchInteractor.swift in Sources */,
 				4C7D92951FF6573300702823 /* LoadingSpinner.swift in Sources */,
 				4C7D92A31FF6598A00702823 /* MainSearchRouter.swift in Sources */,
@@ -624,6 +662,8 @@
 				4C7D927D1FF6531400702823 /* DataResponse.swift in Sources */,
 				4C7D92851FF6549200702823 /* ReusableView.swift in Sources */,
 				4C7D92631FF6487B00702823 /* RootRouter.swift in Sources */,
+				4CDEA3061FF6F52C007B643B /* SearchTextField.swift in Sources */,
+				4C8BF89C1FF7133100EDE30B /* ImageHelper.swift in Sources */,
 				4C7D927F1FF6537B00702823 /* UIStoryboard.swift in Sources */,
 				4C80F2011FF5158F002D6A2F /* AppDelegate.swift in Sources */,
 				4C7D92681FF64D0700702823 /* Fare.swift in Sources */,

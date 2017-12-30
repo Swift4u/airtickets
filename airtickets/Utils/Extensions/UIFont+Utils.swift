@@ -10,16 +10,16 @@ import UIKit
 
 extension UIFont {
     
-    static func TrebuchetMS(withSize size: CGFloat) -> UIFont? {
-        return UIFont(name: Constants.Font.TrebuchetMS, size: size)
+    static func MontserratRegular(withSize size: CGFloat) -> UIFont? {
+        return UIFont(name: Constants.Font.MontserratRegular, size: size)
     }
     
-    static func TrebuchetMSItalic(withSize size: CGFloat) -> UIFont? {
-        return UIFont(name: Constants.Font.TrebuchetMSItalic, size: size)
+    static func MontserratBold(withSize size: CGFloat) -> UIFont? {
+        return UIFont(name: Constants.Font.MontserratBold, size: size)
     }
     
-    static func TrebuchetMSBold(withSize size: CGFloat) -> UIFont? {
-        return UIFont(name: Constants.Font.TrebuchetMSBold, size: size)
+    static func MontserratMedium(withSize size: CGFloat) -> UIFont? {
+        return UIFont(name: Constants.Font.MontserratMedium, size: size)
     }
     
 }
