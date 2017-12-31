@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 import ReachabilitySwift
+import Localize_Swift
 
 class MainSearchInteractor {
     
@@ -26,7 +27,7 @@ extension MainSearchInteractor: MainSearchUseCase {
     
     func searchFlights(_ request: FlightRequest) {
         if Reachability()?.currentReachabilityStatus == .notReachable {
-            output?.onSearchFlightsFailure(message: "NO_INTERNET")
+            output?.onSearchFlightsFailure(message: "NO_INTERNET".localized())
             return
         }
         

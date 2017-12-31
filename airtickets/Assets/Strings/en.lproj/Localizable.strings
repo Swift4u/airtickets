@@ -26,3 +26,4 @@
 "ERROR" = "Erro";
 "LOADING" = "Carregando...";
 "GENERIC_ERROR_MESSAGE" = "Ocorreu um erro ao processar dados";
+"NO_INTERNET" = "Não foi possível conectar à internet para realizar a pesquisa";
