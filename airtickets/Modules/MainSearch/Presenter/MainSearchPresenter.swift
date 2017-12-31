@@ -21,7 +21,7 @@ class MainSearchPresenter {
 
 extension MainSearchPresenter: MainSearchPresentation {
     
-    func didClickSearchButton(origin: Airport, destination: Airport, departure: Date, arrival: Date, adults: String) {
+    func didClickSearchButton(origin: Airport, destination: Airport, departure: Date, arrival: Date?, adults: String) {
         view?.showLoading()
         
         let request = FlightRequest()
@@ -39,8 +39,6 @@ extension MainSearchPresenter: MainSearchPresentation {
         router?.presentAirportFilter()
     }
     
-    //TODO: Implement other methods from presenter->view here
-    
 }
 
 extension MainSearchPresenter: MainSearchInteractorOutput {
@@ -48,8 +46,12 @@ extension MainSearchPresenter: MainSearchInteractorOutput {
     func onSearchFlightsSuccess(flights: [Flight]) {
         view?.hideLoading()
         
-        for flight: Flight in flights {
-            print(flight.airline)
+        if flights.count == 0 {
+            view?.showError("NO_RESULTS_FOUND")
+        } else {
+            for flight: Flight in flights {
+                print(flight.airline)
+            }
         }
     }
     

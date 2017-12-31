@@ -50,12 +50,31 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable, UITextFi
     // MARK: IBActions
     
     @IBAction func onSearchFlights(_ sender: UIButton?) {
-        guard let origin = origin, let destination = destination, let numPassengers = tfPassengers.text else {
-            showError("INVALID")
+        guard let origin = origin else {
+            tfOrigin.isInvalidTextField = true
+            showError("INVALID_ORIGIN")
             return
         }
         
-        presenter?.didClickSearchButton(origin: origin, destination: destination, departure: departurePicker.pickerView.date, arrival: arrivalPicker.pickerView.date, adults: numPassengers)
+        guard let destination = destination else {
+            tfDestination.isInvalidTextField = true
+            showError("INVALID_DESTINATION")
+            return
+        }
+        
+        if tfDeparture.text == "" {
+            tfDeparture.isInvalidTextField = true
+            showError("INVALID_DEPARTURE")
+            return
+        }
+
+        guard let numPassengers = tfPassengers.text, numPassengers != "" else {
+            tfPassengers.isInvalidTextField = true
+            showError("INVALID_PASSENGERS")
+            return
+        }
+        
+        presenter?.didClickSearchButton(origin: origin, destination: destination, departure: departurePicker.pickerView.date, arrival: (tfArrival.text != "" ? arrivalPicker.pickerView.date : nil), adults: numPassengers)
     }
     
     // MARK: Private

@@ -33,5 +33,13 @@ extension UIColor {
     static var topaz: UIColor {
         return UIColor("#1abc9c")
     }
+    
+    static var tomato: UIColor {
+        return UIColor("#ff9f91")
+    }
+    
+    static var alphaGrey: UIColor {
+        return UIColor(red: 242/255.0, green: 242/255.0, blue: 242/255.0, alpha: 0.7)
+    }
 
 }

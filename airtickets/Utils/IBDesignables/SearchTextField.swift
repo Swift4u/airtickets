@@ -13,13 +13,6 @@ class SearchTextField: UITextField {
     var hintYPadding: CGFloat = 0.0
     var title = UILabel()
     
-    override var placeholder: String? {
-        didSet {
-            title.text = placeholder
-            title.sizeToFit()
-        }
-    }
-    
     override var attributedPlaceholder: NSAttributedString? {
         didSet {
             title.text = attributedPlaceholder?.string
@@ -50,10 +43,26 @@ class SearchTextField: UITextField {
         }
     }
     
+    override var text: String? {
+        didSet {
+            isInvalidTextField = false
+        }
+    }
+    
     var titleActiveTextColour: UIColor! {
         didSet {
             if isFirstResponder {
                 title.textColor = titleActiveTextColour
+            }
+        }
+    }
+    
+    var isInvalidTextField: Bool = true {
+        didSet {
+            if isInvalidTextField {
+                layer.borderColor = UIColor.tomato.cgColor
+            } else {
+                layer.borderColor = UIColor.silver.cgColor
             }
         }
     }
@@ -63,19 +72,25 @@ class SearchTextField: UITextField {
             if isEnabled {
                 backgroundColor = UIColor.white
             } else {
-                backgroundColor = UIColor(red: 242/255.0, green: 242/255.0, blue: 242/255.0, alpha: 0.7)
+                backgroundColor = UIColor.alphaGrey
             }
         }
     }
     
     // MARK:- Init
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder:aDecoder)
+    
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
         setup()
     }
     
-    override init(frame: CGRect) {
-        super.init(frame:frame)
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    override public func awakeFromNib() {
+        super.awakeFromNib()
         setup()
     }
     
@@ -164,7 +179,7 @@ class SearchTextField: UITextField {
         if isEnabled {
             backgroundColor = UIColor.white
         } else {
-            backgroundColor = UIColor(red: 242/255.0, green: 242/255.0, blue: 242/255.0, alpha: 0.7)
+            backgroundColor = UIColor.alphaGrey
         }
     }
     
@@ -213,4 +228,5 @@ class SearchTextField: UITextField {
             self.title.frame = r
         }, completion: nil)
     }
+    
 }
