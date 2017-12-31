@@ -82,6 +82,8 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable, UITextFi
     private func setupView() {
         view.backgroundColor = UIColor.paleGrey
         
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        
         tfOrigin.setRightIcon(UIImage(named: "pin"))
         tfDestination.setRightIcon(UIImage(named: "pin"))
         tfDeparture.setRightIcon(UIImage(named: "calendario"))

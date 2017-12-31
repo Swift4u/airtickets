@@ -58,13 +58,12 @@ extension AppDelegate {
         navigationBarAppearace.tintColor = UIColor.white
         navigationBarAppearace.barTintColor = UIColor.topaz
         navigationBarAppearace.isTranslucent = false
-        navigationBarAppearace.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: Constants.Font.MontserratBold, size: 16.0) as Any]
+        navigationBarAppearace.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: Constants.Font.MontserratBold, size: 14.0) as Any]
     }
     
     fileprivate func setupBackButtonAppearance() {
         UINavigationBar.appearance().backIndicatorImage = UIImage.backIcon
         UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage.backIcon
-        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: 0, vertical: -60), for: .default)
     }
 
 }

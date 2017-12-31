@@ -29,4 +29,5 @@ protocol MainSearchInteractorOutput: class {
 protocol MainSearchWireframe: class {
     func presentAirportFilter()
     func onAirportSelected(_ airport: Airport)
+    func presentResults(_ flights: [Flight])
 }

@@ -55,5 +55,10 @@ extension MainSearchRouter: MainSearchWireframe {
             viewController.onAirportSelected(airport)
         }
     }
+    
+    func presentResults(_ flights: [Flight]) {
+        let resultsViewController = ResultsRouter.setupModule(flights)
+        view?.navigationController?.pushViewController(resultsViewController, animated: true)
+    }
 
 }

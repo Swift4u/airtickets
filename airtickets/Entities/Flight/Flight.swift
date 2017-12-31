@@ -30,8 +30,8 @@ class Flight: Mappable {
         flightNo <- map["flightno"]
         origin <- map["origin"]
         destination <- map["destination"]
-        departureTime <- (map["DepartureTime"], dateTransform)
-        arrivalTime <- (map["ArrivalTime"], dateTransform)
+        departureTime <- (map["depdate"], dateTransform)
+        arrivalTime <- (map["arrdate"], dateTransform)
         duration <- map["duration"]
         stops <- map["stops"]
         carrierId <- map["carrierid"]
@@ -42,12 +42,12 @@ class Flight: Mappable {
     
     let dateTransform = TransformOf<Date, String>(fromJSON: { (value: String?) -> Date? in
         if let value = value {
-            return DateHelper.dateFromString(value, format: "yyyy-MM-dd'T'HH:mm:ssZZZZZ")
+            return DateHelper.dateFromString(value, format: "yyyy-MM-dd't'HHmm")
         }
         return nil
     }, toJSON: { (value: Date?) -> String? in
         if let value = value {
-            return DateHelper.stringFromDate(value, format: "yyyy-MM-dd'T'HH:mm:ssZZZZZ")
+            return DateHelper.stringFromDate(value, format: "yyyy-MM-dd't'HHmm")
         }
         return nil
     })

@@ -7,12 +7,11 @@
 //
 
 import UIKit
-import FontAwesome_swift
 
 extension UIImage {
     
     static var backIcon: UIImage {
-        return UIImage.fontAwesomeIcon(name: .arrowLeft, textColor: .white, size: CGSize(width: 30.0, height: 30.0))
+        return UIImage(named: "arrowBackBranco")!
     }
     
 }

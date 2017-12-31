@@ -49,9 +49,11 @@ extension MainSearchPresenter: MainSearchInteractorOutput {
         if flights.count == 0 {
             view?.showError("NO_RESULTS_FOUND")
         } else {
-            for flight: Flight in flights {
-                print(flight.airline)
-            }
+            let results = flights.filter({ (flight) -> Bool in
+                return flight.returnFlights?.first != nil
+            })
+            
+            router?.presentResults(results)
         }
     }
     

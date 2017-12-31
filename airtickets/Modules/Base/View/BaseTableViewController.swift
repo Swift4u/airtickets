@@ -22,6 +22,14 @@ class BaseTableViewController: UITableViewController, BaseTableView {
         LoadingSpinner.hide()
     }
     
+    func showNavigationBarAnimated(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    func hideNavigationBarAnimated(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     func showMessage(_ message: String?, withTitle title: String?) {
         let errorMessage = message ?? "GENERIC_ERROR_MESSAGE"
         let errorTitle = title ?? "ERROR"

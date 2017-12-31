@@ -18,6 +18,8 @@ class AirportFilterViewController: BaseTableViewController, StoryboardLoadable, 
     
     var airports: [Airport] = []
     var results: [Airport] = []
+    
+    // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
