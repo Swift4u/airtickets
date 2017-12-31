@@ -70,6 +70,10 @@
 		4CAAA41D1FF92A6800BDBA50 /* NumberHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAAA41C1FF92A6800BDBA50 /* NumberHelper.swift */; };
 		4CAAA4211FF9432500BDBA50 /* ResultsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CAAA4201FF9432500BDBA50 /* ResultsHeaderView.xib */; };
 		4CAAA4231FF9470900BDBA50 /* ResultsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAAA4221FF9470900BDBA50 /* ResultsHeaderView.swift */; };
+		4CAAA4251FF94D1600BDBA50 /* ResultsFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CAAA4241FF94D1600BDBA50 /* ResultsFooterView.xib */; };
+		4CAAA4271FF94E7F00BDBA50 /* ResultsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAAA4261FF94E7F00BDBA50 /* ResultsFooterView.swift */; };
+		4CAAA4291FF952A100BDBA50 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAAA4281FF952A100BDBA50 /* UIAlertController.swift */; };
+		4CAAA42B1FF95E2B00BDBA50 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAAA42A1FF95E2B00BDBA50 /* String.swift */; };
 		4CDEA3061FF6F52C007B643B /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEA3051FF6F52C007B643B /* SearchTextField.swift */; };
 		4CDEA30C1FF6F981007B643B /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA3091FF6F980007B643B /* Montserrat-Bold.ttf */; };
 		4CDEA30D1FF6F981007B643B /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA30A1FF6F980007B643B /* Montserrat-Regular.ttf */; };
@@ -155,6 +159,10 @@
 		4CAAA41C1FF92A6800BDBA50 /* NumberHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberHelper.swift; sourceTree = "<group>"; };
 		4CAAA4201FF9432500BDBA50 /* ResultsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsHeaderView.xib; sourceTree = "<group>"; };
 		4CAAA4221FF9470900BDBA50 /* ResultsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsHeaderView.swift; sourceTree = "<group>"; };
+		4CAAA4241FF94D1600BDBA50 /* ResultsFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsFooterView.xib; sourceTree = "<group>"; };
+		4CAAA4261FF94E7F00BDBA50 /* ResultsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsFooterView.swift; sourceTree = "<group>"; };
+		4CAAA4281FF952A100BDBA50 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		4CAAA42A1FF95E2B00BDBA50 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		4CDEA3051FF6F52C007B643B /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		4CDEA3091FF6F980007B643B /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		4CDEA30A1FF6F980007B643B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
@@ -372,6 +380,8 @@
 				4C7D92AC1FF65D1400702823 /* UIImage+Icons.swift */,
 				4C0FE1451FF83BFA00E95C91 /* Dictionary.swift */,
 				4CAAA41A1FF9237500BDBA50 /* UIView.swift */,
+				4CAAA4281FF952A100BDBA50 /* UIAlertController.swift */,
+				4CAAA42A1FF95E2B00BDBA50 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -616,6 +626,8 @@
 				4CAAA4131FF9137D00BDBA50 /* FlightTableViewCell.swift */,
 				4CAAA4201FF9432500BDBA50 /* ResultsHeaderView.xib */,
 				4CAAA4221FF9470900BDBA50 /* ResultsHeaderView.swift */,
+				4CAAA4241FF94D1600BDBA50 /* ResultsFooterView.xib */,
+				4CAAA4261FF94E7F00BDBA50 /* ResultsFooterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -769,6 +781,7 @@
 				4CDEA30E1FF6F981007B643B /* Montserrat-Medium.ttf in Resources */,
 				4C80F2081FF5158F002D6A2F /* Assets.xcassets in Resources */,
 				4C0FE1381FF79B1900E95C91 /* airports.json in Resources */,
+				4CAAA4251FF94D1600BDBA50 /* ResultsFooterView.xib in Resources */,
 				4CAAA4121FF9092D00BDBA50 /* Results.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -855,6 +868,7 @@
 				4C7D92AF1FF663F900702823 /* ResultSearch.swift in Sources */,
 				4C7D92891FF6554300702823 /* DateHelper.swift in Sources */,
 				4C0FE1441FF7A23A00E95C91 /* BaseTableViewController.swift in Sources */,
+				4CAAA4291FF952A100BDBA50 /* UIAlertController.swift in Sources */,
 				4C7D92A91FF65CA500702823 /* UIColor+Pallet.swift in Sources */,
 				4C7D929C1FF6580E00702823 /* MainSearchContract.swift in Sources */,
 				4C0FE14A1FF83DBD00E95C91 /* FlightRequest.swift in Sources */,
@@ -895,6 +909,8 @@
 				4CDEA3061FF6F52C007B643B /* SearchTextField.swift in Sources */,
 				4C8BF89C1FF7133100EDE30B /* ImageHelper.swift in Sources */,
 				4C7D927F1FF6537B00702823 /* UIStoryboard.swift in Sources */,
+				4CAAA4271FF94E7F00BDBA50 /* ResultsFooterView.swift in Sources */,
+				4CAAA42B1FF95E2B00BDBA50 /* String.swift in Sources */,
 				4C0FE1421FF7A20200E95C91 /* BaseTableContract.swift in Sources */,
 				4CAAA40E1FF9089A00BDBA50 /* ResultsRouter.swift in Sources */,
 				4C0FE1351FF799C400E95C91 /* AirportFilterInteractor.swift in Sources */,

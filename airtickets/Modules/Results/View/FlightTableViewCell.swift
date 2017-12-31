@@ -58,7 +58,7 @@ class FlightTableViewCell: UITableViewCell {
     
     func setupGo(_ flight: Flight) {
         if let airline = flight.airline {
-            lbAirlineGo.text = firstName(airline).uppercased()
+            lbAirlineGo.text = airline.firstName().uppercased()
         }
         
         if let carrie = flight.carrierId, let flightNo = flight.flightNo {
@@ -91,7 +91,7 @@ class FlightTableViewCell: UITableViewCell {
     
     func setupBack(_ flight: Flight) {
         if let airline = flight.airline {
-            lbAirlineBack.text = firstName(airline).uppercased()
+            lbAirlineBack.text = airline.firstName().uppercased()
         }
         
         if let carrie = flight.carrierId, let flightNo = flight.flightNo {
@@ -126,11 +126,6 @@ class FlightTableViewCell: UITableViewCell {
         guard let totalFare = fare.totalFare else { return }
         let strBook = String(format: "%@ %@", "COMPRAR", NumberHelper.doubleToCurrency(totalFare))
         btnBook.setTitle(strBook, for: .normal)
-    }
-    
-    fileprivate func firstName(_ fullName: String) -> String {
-        let parts = fullName.components(separatedBy: " ")
-        return parts.first ?? fullName
     }
     
 }

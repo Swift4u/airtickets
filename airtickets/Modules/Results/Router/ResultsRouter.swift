@@ -29,6 +29,7 @@ class ResultsRouter {
         presenter.view = viewController
         presenter.router = router
         presenter.interactor = interactor
+        presenter.original = flights
         presenter.flights = flights
         
         router.view = viewController

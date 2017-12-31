@@ -13,7 +13,15 @@ class ResultsViewController: BaseTableViewController, StoryboardLoadable {
     // MARK: Properties
     
     var presenter: ResultsPresentation?
-    var flights: [Flight] = []
+    var filtered: Bool = false
+    
+    var flights: [Flight] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
+    var airlines: [String] = []
     
     // MARK: Lifecycle
 
@@ -21,6 +29,16 @@ class ResultsViewController: BaseTableViewController, StoryboardLoadable {
         super.viewDidLoad()
         setupView()
         presenter?.viewDidLoad()
+        
+        for flight: Flight in flights {
+            if let airline = flight.airline {
+                if airlines.contains(airline) == false {
+                    airlines.append(airline)
+                }
+            }
+        }
+        
+        airlines.sort()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -85,6 +103,63 @@ class ResultsViewController: BaseTableViewController, StoryboardLoadable {
         
         return headerView
     }
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 40.0
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = ResultsFooterView(frame: CGRect(x: 0.0, y: 0.0, width: view.frame.width, height: 40.0))
+        
+        footerView.btnFilter.addTarget(self, action: #selector(didClickFilter(_:)), for: .touchUpInside)
+        footerView.btnSort.addTarget(self, action: #selector(didClickSort(_:)), for: .touchUpInside)
+        
+        return footerView
+    }
+    
+    // MARK: Actions
+    
+    @objc func didClickFilter(_ sender: UIButton) {
+        var actions: [UIAlertAction] = []
+        
+        for name: String in airlines {
+            let filterAction = UIAlertAction(title: name.firstName().uppercased(), style: .default) { (action) in
+                self.filtered = true
+                self.presenter?.filterAirline(name)
+            }
+            
+            actions.append(filterAction)
+        }
+        
+        if filtered {
+            let filterActionAll = UIAlertAction(title: "REMOVE_FILTER", style: .destructive) { (action) in
+                self.filtered = false
+                self.presenter?.filterAirline("")
+            }
+            
+            actions.append(filterActionAll)
+        }
+        
+        actions.append(UIAlertAction(title: "CANCELAR", style: .cancel, handler: nil))
+        
+        UIAlertController.presentActionSheetInViewController(self, title: "FILTRAR_AIRLINE", message: nil, actions: actions, completion: nil)
+    }
+    
+    @objc func didClickSort(_ sender: UIButton) {
+        let fareDesc = UIAlertAction(title: "MAIOR_VALOR", style: .default) { (action) in
+            self.presenter?.sortFare(by: .orderedDescending)
+        }
+        
+        let fareAsc = UIAlertAction(title: "MENOR_VALOR", style: .default) { (action) in
+            self.presenter?.sortFare(by: .orderedAscending)
+        }
+        
+        let cancel = UIAlertAction(title: "CANCELAR", style: .cancel, handler: nil)
+        
+        let actions: [UIAlertAction] = [fareDesc, fareAsc, cancel]
+        
+        UIAlertController.presentActionSheetInViewController(self, title: "ORDENAR", message: nil, actions: actions, completion: nil)
+    }
 
 }
 
@@ -93,5 +168,5 @@ extension ResultsViewController: ResultsView {
     func showResults(forFlights flights: [Flight]) {
         self.flights = flights
     }
-
+    
 }

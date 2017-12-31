@@ -14,6 +14,8 @@ protocol ResultsView: BaseTableView {
 
 protocol ResultsPresentation: class {
     func viewDidLoad()
+    func sortFare(by order: ComparisonResult)
+    func filterAirline(_ name: String)
 }
 
 protocol ResultsUseCase: class {

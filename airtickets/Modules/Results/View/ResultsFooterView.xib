@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultsFooterView" customModule="airtickets" customModuleProvider="target">
+            <connections>
+                <outlet property="btnFilter" destination="tJ4-Z2-L8j" id="b4V-Os-1tC"/>
+                <outlet property="btnSort" destination="YrY-fo-yNW" id="IEp-sz-KfA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJ4-Z2-L8j">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="74"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="FILTRAR" image="filtro">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrY-fo-yNW">
+                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="74"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="ORDENAR" image="ordenar">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YrY-fo-yNW" secondAttribute="trailing" id="CZ6-YU-6XJ"/>
+                <constraint firstItem="tJ4-Z2-L8j" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Dii-Uh-JOs"/>
+                <constraint firstItem="YrY-fo-yNW" firstAttribute="leading" secondItem="tJ4-Z2-L8j" secondAttribute="trailing" id="JsT-uM-RMQ"/>
+                <constraint firstItem="YrY-fo-yNW" firstAttribute="leading" secondItem="tJ4-Z2-L8j" secondAttribute="trailing" id="KhU-32-PkU"/>
+                <constraint firstItem="YrY-fo-yNW" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="baU-Bs-LDT"/>
+                <constraint firstItem="tJ4-Z2-L8j" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dtX-3u-ivQ"/>
+                <constraint firstItem="YrY-fo-yNW" firstAttribute="width" secondItem="tJ4-Z2-L8j" secondAttribute="width" id="jda-vW-Z9i"/>
+                <constraint firstItem="tJ4-Z2-L8j" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="qPU-1d-hyh"/>
+                <constraint firstItem="YrY-fo-yNW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="v6Y-1E-DcM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="351"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="filtro" width="11" height="10"/>
+        <image name="ordenar" width="11" height="11"/>
+    </resources>
+</document>
