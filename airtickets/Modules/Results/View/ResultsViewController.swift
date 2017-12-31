@@ -70,6 +70,21 @@ class ResultsViewController: BaseTableViewController, StoryboardLoadable {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 39.0
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let headerView = Bundle.main.loadNibNamed("ResultsHeaderView", owner: self, options: nil)![0] as? UIView else {
+            return UIView()
+        }
+        
+        headerView.backgroundColor = UIColor.coolGrey
+        headerView.alpha = 0.9
+        
+        return headerView
+    }
 
 }
 

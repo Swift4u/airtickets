@@ -68,6 +68,8 @@
 		4CAAA4191FF91D1600BDBA50 /* BookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAAA4181FF91D1600BDBA50 /* BookButton.swift */; };
 		4CAAA41B1FF9237500BDBA50 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAAA41A1FF9237500BDBA50 /* UIView.swift */; };
 		4CAAA41D1FF92A6800BDBA50 /* NumberHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAAA41C1FF92A6800BDBA50 /* NumberHelper.swift */; };
+		4CAAA4211FF9432500BDBA50 /* ResultsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CAAA4201FF9432500BDBA50 /* ResultsHeaderView.xib */; };
+		4CAAA4231FF9470900BDBA50 /* ResultsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAAA4221FF9470900BDBA50 /* ResultsHeaderView.swift */; };
 		4CDEA3061FF6F52C007B643B /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEA3051FF6F52C007B643B /* SearchTextField.swift */; };
 		4CDEA30C1FF6F981007B643B /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA3091FF6F980007B643B /* Montserrat-Bold.ttf */; };
 		4CDEA30D1FF6F981007B643B /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA30A1FF6F980007B643B /* Montserrat-Regular.ttf */; };
@@ -151,6 +153,8 @@
 		4CAAA4181FF91D1600BDBA50 /* BookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookButton.swift; sourceTree = "<group>"; };
 		4CAAA41A1FF9237500BDBA50 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4CAAA41C1FF92A6800BDBA50 /* NumberHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberHelper.swift; sourceTree = "<group>"; };
+		4CAAA4201FF9432500BDBA50 /* ResultsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsHeaderView.xib; sourceTree = "<group>"; };
+		4CAAA4221FF9470900BDBA50 /* ResultsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsHeaderView.swift; sourceTree = "<group>"; };
 		4CDEA3051FF6F52C007B643B /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		4CDEA3091FF6F980007B643B /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		4CDEA30A1FF6F980007B643B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
@@ -610,6 +614,8 @@
 				4CAAA40F1FF908D000BDBA50 /* ResultsViewController.swift */,
 				4CAAA4141FF9137D00BDBA50 /* FlightTableViewCell.xib */,
 				4CAAA4131FF9137D00BDBA50 /* FlightTableViewCell.swift */,
+				4CAAA4201FF9432500BDBA50 /* ResultsHeaderView.xib */,
+				4CAAA4221FF9470900BDBA50 /* ResultsHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -758,6 +764,7 @@
 				4C0FE1241FF7822400E95C91 /* ListPickerView.xib in Resources */,
 				4CAAA4161FF9137D00BDBA50 /* FlightTableViewCell.xib in Resources */,
 				4CDEA30D1FF6F981007B643B /* Montserrat-Regular.ttf in Resources */,
+				4CAAA4211FF9432500BDBA50 /* ResultsHeaderView.xib in Resources */,
 				4C0FE1401FF7A0AC00E95C91 /* AirportFilter.storyboard in Resources */,
 				4CDEA30E1FF6F981007B643B /* Montserrat-Medium.ttf in Resources */,
 				4C80F2081FF5158F002D6A2F /* Assets.xcassets in Resources */,
@@ -891,6 +898,7 @@
 				4C0FE1421FF7A20200E95C91 /* BaseTableContract.swift in Sources */,
 				4CAAA40E1FF9089A00BDBA50 /* ResultsRouter.swift in Sources */,
 				4C0FE1351FF799C400E95C91 /* AirportFilterInteractor.swift in Sources */,
+				4CAAA4231FF9470900BDBA50 /* ResultsHeaderView.swift in Sources */,
 				4C80F2011FF5158F002D6A2F /* AppDelegate.swift in Sources */,
 				4C0FE1481FF83D6300E95C91 /* BaseRequest.swift in Sources */,
 				4C7D92681FF64D0700702823 /* Fare.swift in Sources */,

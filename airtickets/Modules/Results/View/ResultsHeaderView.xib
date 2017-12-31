@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultsHeaderView" customModule="airtickets" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cia Aérea" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noh-pw-QAO">
+                    <rect key="frame" x="0.0" y="0.0" width="94" height="73"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partida" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNq-i8-BOD">
+                    <rect key="frame" x="94" y="0.0" width="93.5" height="73"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duração" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZ2-bL-9U0">
+                    <rect key="frame" x="187.5" y="0.0" width="94" height="73"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chegada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zz-60-lT6">
+                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="73"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="noh-pw-QAO" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="2OM-CD-xFM"/>
+                <constraint firstItem="5zz-60-lT6" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="6Qa-sf-6Px"/>
+                <constraint firstItem="jZ2-bL-9U0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Aok-Eo-giX"/>
+                <constraint firstItem="jZ2-bL-9U0" firstAttribute="width" secondItem="noh-pw-QAO" secondAttribute="width" id="FQY-8c-3JS"/>
+                <constraint firstItem="5zz-60-lT6" firstAttribute="leading" secondItem="jZ2-bL-9U0" secondAttribute="trailing" id="GEf-9H-flD"/>
+                <constraint firstItem="jZ2-bL-9U0" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="HUT-d4-J5P"/>
+                <constraint firstItem="gNq-i8-BOD" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="JfM-KO-Anq"/>
+                <constraint firstItem="gNq-i8-BOD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Jjd-zT-0mx"/>
+                <constraint firstItem="5zz-60-lT6" firstAttribute="width" secondItem="noh-pw-QAO" secondAttribute="width" id="Pbt-aC-mJr"/>
+                <constraint firstItem="noh-pw-QAO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hb5-iC-ecv"/>
+                <constraint firstItem="gNq-i8-BOD" firstAttribute="width" secondItem="noh-pw-QAO" secondAttribute="width" id="mfa-0t-MAT"/>
+                <constraint firstItem="noh-pw-QAO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="s93-0d-p9N"/>
+                <constraint firstItem="jZ2-bL-9U0" firstAttribute="leading" secondItem="gNq-i8-BOD" secondAttribute="trailing" id="tZp-F0-9kA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5zz-60-lT6" secondAttribute="trailing" id="vHz-Cm-3M2"/>
+                <constraint firstItem="gNq-i8-BOD" firstAttribute="leading" secondItem="noh-pw-QAO" secondAttribute="trailing" id="xO6-Uo-xhs"/>
+                <constraint firstItem="5zz-60-lT6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ymJ-WX-9tF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="170.5"/>
+        </view>
+    </objects>
+</document>
