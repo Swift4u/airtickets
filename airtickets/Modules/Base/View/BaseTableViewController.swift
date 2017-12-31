@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class BaseTableViewController: UITableViewController, BaseTableView {
     
@@ -14,7 +15,7 @@ class BaseTableViewController: UITableViewController, BaseTableView {
     
     func showLoading() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        LoadingSpinner.show("LOADING")
+        LoadingSpinner.show("LOADING".localized())
     }
     
     func hideLoading() {
@@ -31,16 +32,16 @@ class BaseTableViewController: UITableViewController, BaseTableView {
     }
     
     func showMessage(_ message: String?, withTitle title: String?) {
-        let errorMessage = message ?? "GENERIC_ERROR_MESSAGE"
-        let errorTitle = title ?? "ERROR"
+        let errorMessage = message ?? "GENERIC_ERROR_MESSAGE".localized()
+        let errorTitle = title ?? "ERROR".localized()
         let errorController = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: .alert)
         errorController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         present(errorController, animated: true, completion: nil)
     }
     
     func showError(_ message: String?) {
-        let errorMessage = message ?? "GENERIC_ERROR_MESSAGE"
-        let errorController = UIAlertController(title: "TITLE_ERROR", message: errorMessage, preferredStyle: .alert)
+        let errorMessage = message ?? "GENERIC_ERROR_MESSAGE".localized()
+        let errorController = UIAlertController(title: "TITLE_ERROR".localized(), message: errorMessage, preferredStyle: .alert)
         errorController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         present(errorController, animated: true, completion: nil)
     }

@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  airtickets
+
+  Created by Paulo Rodrigues on 31/12/17.
+  Copyright © 2017 MaxMilhas. All rights reserved.
+*/
+
+"PESQUISAR_PASSAGEM" = "Pesquisar Passagem";
+"VOO_DIRETO" = "VOO DIRETO";
+"1_PARADA" = "1 PARADA";
+"PARADAS" = "PARADAS";
+"COMPRAR" = "Comprar";
+"ORDENAR" = "Ordenar";
+"MAIOR_VALOR" = "Maior Valor";
+"MENOR_VALOR" = "Menor Valor";
+"CANCELAR" = "Cancelar";
+"FILTRAR_CIA" = "Filtrar Cia Aérea";
+"REMOVER_FILTRO" = "Remover Filtro";
+"INVALID_ORIGIN" = "Informe a origem";
+"INVALID_DESTINATION" = "Informe o destino";
+"INVALID_DEPARTURE" = "Informe a data de partida";
+"INVALID_PASSENGERS" = "Informe a quantidade de adultos";
+"SEARCH" = "Buscar areoporto ou cidade";
+"TITLE_ERROR" = "Erro";
+"ERROR" = "Erro";
+"LOADING" = "Carregando...";
+"GENERIC_ERROR_MESSAGE" = "Ocorreu um erro ao processar dados";

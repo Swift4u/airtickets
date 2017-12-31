@@ -74,6 +74,7 @@
 		4CAAA4271FF94E7F00BDBA50 /* ResultsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAAA4261FF94E7F00BDBA50 /* ResultsFooterView.swift */; };
 		4CAAA4291FF952A100BDBA50 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAAA4281FF952A100BDBA50 /* UIAlertController.swift */; };
 		4CAAA42B1FF95E2B00BDBA50 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAAA42A1FF95E2B00BDBA50 /* String.swift */; };
+		4CAAA42F1FF9689100BDBA50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CAAA4311FF9689100BDBA50 /* Localizable.strings */; };
 		4CDEA3061FF6F52C007B643B /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEA3051FF6F52C007B643B /* SearchTextField.swift */; };
 		4CDEA30C1FF6F981007B643B /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA3091FF6F980007B643B /* Montserrat-Bold.ttf */; };
 		4CDEA30D1FF6F981007B643B /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA30A1FF6F980007B643B /* Montserrat-Regular.ttf */; };
@@ -163,6 +164,7 @@
 		4CAAA4261FF94E7F00BDBA50 /* ResultsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsFooterView.swift; sourceTree = "<group>"; };
 		4CAAA4281FF952A100BDBA50 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		4CAAA42A1FF95E2B00BDBA50 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		4CAAA4301FF9689100BDBA50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4CDEA3051FF6F52C007B643B /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		4CDEA3091FF6F980007B643B /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		4CDEA30A1FF6F980007B643B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				4C80F2071FF5158F002D6A2F /* Assets.xcassets */,
 				4CDEA3071FF6F955007B643B /* Fonts */,
 				4C0FE1361FF79B0B00E95C91 /* Data */,
+				4CAAA42C1FF9635000BDBA50 /* Strings */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -648,6 +651,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		4CAAA42C1FF9635000BDBA50 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				4CAAA4311FF9689100BDBA50 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 		4CDEA3071FF6F955007B643B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -779,6 +790,7 @@
 				4CAAA4211FF9432500BDBA50 /* ResultsHeaderView.xib in Resources */,
 				4C0FE1401FF7A0AC00E95C91 /* AirportFilter.storyboard in Resources */,
 				4CDEA30E1FF6F981007B643B /* Montserrat-Medium.ttf in Resources */,
+				4CAAA42F1FF9689100BDBA50 /* Localizable.strings in Resources */,
 				4C80F2081FF5158F002D6A2F /* Assets.xcassets in Resources */,
 				4C0FE1381FF79B1900E95C91 /* airports.json in Resources */,
 				4CAAA4251FF94D1600BDBA50 /* ResultsFooterView.xib in Resources */,
@@ -806,6 +818,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
 				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
@@ -815,6 +828,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilitySwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
@@ -948,6 +962,14 @@
 				4C80F20A1FF5158F002D6A2F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4CAAA4311FF9689100BDBA50 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CAAA4301FF9689100BDBA50 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

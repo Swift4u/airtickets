@@ -9,6 +9,7 @@ target 'airtickets' do
     pod 'UIColor_Hex_Swift', '~> 3.0.1'
     pod 'FontAwesome.swift'
     pod 'ReachabilitySwift', '~> 3'
+    pod 'Localize-Swift', '~> 1.6'
 end
 
 post_install do |installer|

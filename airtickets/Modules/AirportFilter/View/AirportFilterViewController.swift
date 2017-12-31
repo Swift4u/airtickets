@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class AirportFilterViewController: BaseTableViewController, StoryboardLoadable, UISearchBarDelegate {
     
@@ -42,7 +43,7 @@ class AirportFilterViewController: BaseTableViewController, StoryboardLoadable, 
         tableView.tableFooterView = UIView()
         
         // Search bar
-        searchBar.placeholder = "SEARCH"
+        searchBar.placeholder = "SEARCH".localized()
         searchBar.showsCancelButton = true
         searchBar.autocapitalizationType = .none
         searchBar.delegate = self

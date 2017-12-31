@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class ResultsViewController: BaseTableViewController, StoryboardLoadable {
     
@@ -50,7 +51,7 @@ class ResultsViewController: BaseTableViewController, StoryboardLoadable {
     
     fileprivate func setupView() {
         // Title
-        title = "PESQUISAR_PASSAGEM"
+        title = "PESQUISAR_PASSAGEM".localized().uppercased()
         
         // Table view
         tableView.register(UINib(nibName: "FlightTableViewCell", bundle: nil), forCellReuseIdentifier: "reuseIdentifier")
@@ -132,7 +133,7 @@ class ResultsViewController: BaseTableViewController, StoryboardLoadable {
         }
         
         if filtered {
-            let filterActionAll = UIAlertAction(title: "REMOVE_FILTER", style: .destructive) { (action) in
+            let filterActionAll = UIAlertAction(title: "REMOVER_FILTRO".localized(), style: .destructive) { (action) in
                 self.filtered = false
                 self.presenter?.filterAirline("")
             }
@@ -140,25 +141,25 @@ class ResultsViewController: BaseTableViewController, StoryboardLoadable {
             actions.append(filterActionAll)
         }
         
-        actions.append(UIAlertAction(title: "CANCELAR", style: .cancel, handler: nil))
+        actions.append(UIAlertAction(title: "CANCELAR".localized(), style: .cancel, handler: nil))
         
-        UIAlertController.presentActionSheetInViewController(self, title: "FILTRAR_AIRLINE", message: nil, actions: actions, completion: nil)
+        UIAlertController.presentActionSheetInViewController(self, title: "FILTRAR_CIA".localized(), message: nil, actions: actions, completion: nil)
     }
     
     @objc func didClickSort(_ sender: UIButton) {
-        let fareDesc = UIAlertAction(title: "MAIOR_VALOR", style: .default) { (action) in
+        let fareDesc = UIAlertAction(title: "MAIOR_VALOR".localized(), style: .default) { (action) in
             self.presenter?.sortFare(by: .orderedDescending)
         }
         
-        let fareAsc = UIAlertAction(title: "MENOR_VALOR", style: .default) { (action) in
+        let fareAsc = UIAlertAction(title: "MENOR_VALOR".localized(), style: .default) { (action) in
             self.presenter?.sortFare(by: .orderedAscending)
         }
         
-        let cancel = UIAlertAction(title: "CANCELAR", style: .cancel, handler: nil)
+        let cancel = UIAlertAction(title: "CANCELAR".localized(), style: .cancel, handler: nil)
         
         let actions: [UIAlertAction] = [fareDesc, fareAsc, cancel]
         
-        UIAlertController.presentActionSheetInViewController(self, title: "ORDENAR", message: nil, actions: actions, completion: nil)
+        UIAlertController.presentActionSheetInViewController(self, title: "ORDENAR".localized(), message: nil, actions: actions, completion: nil)
     }
 
 }

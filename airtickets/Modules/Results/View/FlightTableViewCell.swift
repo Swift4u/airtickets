@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class FlightTableViewCell: UITableViewCell {
     
@@ -76,9 +77,9 @@ class FlightTableViewCell: UITableViewCell {
         
         if let stops = flight.stops {
             switch stops {
-            case "0": lbStopsGo.text = "VOO_DIRETO"
-            case "1": lbStopsGo.text = "1_PARADA"
-            default: lbStopsGo.text = String(format: "%@ %@", stops, "PARADAS")
+            case "0": lbStopsGo.text = "VOO_DIRETO".localized()
+            case "1": lbStopsGo.text = "1_PARADA".localized()
+            default: lbStopsGo.text = String(format: "%@ %@", stops, "PARADAS".localized())
             }
         }
         
@@ -109,9 +110,9 @@ class FlightTableViewCell: UITableViewCell {
         
         if let stops = flight.stops {
             switch stops {
-            case "0": lbStopsBack.text = "VOO_DIRETO"
-            case "1": lbStopsBack.text = "1_PARADA"
-            default: lbStopsBack.text = String(format: "%@ %@", stops, "PARADAS")
+            case "0": lbStopsBack.text = "VOO_DIRETO".localized()
+            case "1": lbStopsBack.text = "1_PARADA".localized()
+            default: lbStopsBack.text = String(format: "%@ %@", stops, "PARADAS".localized())
             }
         }
         
@@ -124,7 +125,7 @@ class FlightTableViewCell: UITableViewCell {
     
     func setFare(_ fare: Fare) {
         guard let totalFare = fare.totalFare else { return }
-        let strBook = String(format: "%@ %@", "COMPRAR", NumberHelper.doubleToCurrency(totalFare))
+        let strBook = String(format: "%@ %@", "COMPRAR".localized(), NumberHelper.doubleToCurrency(totalFare))
         btnBook.setTitle(strBook, for: .normal)
     }
     

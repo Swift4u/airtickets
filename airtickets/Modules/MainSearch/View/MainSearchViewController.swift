@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class MainSearchViewController: BaseViewController, StoryboardLoadable, UITextFieldDelegate {
     
@@ -52,25 +53,25 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable, UITextFi
     @IBAction func onSearchFlights(_ sender: UIButton?) {
         guard let origin = origin else {
             tfOrigin.isInvalidTextField = true
-            showError("INVALID_ORIGIN")
+            showError("INVALID_ORIGIN".localized())
             return
         }
         
         guard let destination = destination else {
             tfDestination.isInvalidTextField = true
-            showError("INVALID_DESTINATION")
+            showError("INVALID_DESTINATION".localized())
             return
         }
         
         if tfDeparture.text == "" {
             tfDeparture.isInvalidTextField = true
-            showError("INVALID_DEPARTURE")
+            showError("INVALID_DEPARTURE".localized())
             return
         }
 
         guard let numPassengers = tfPassengers.text, numPassengers != "" else {
             tfPassengers.isInvalidTextField = true
-            showError("INVALID_PASSENGERS")
+            showError("INVALID_PASSENGERS".localized())
             return
         }
         

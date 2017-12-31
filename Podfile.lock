@@ -4,6 +4,7 @@ PODS:
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 3.0)
   - FontAwesome.swift (1.3.2)
+  - Localize-Swift (1.7.1)
   - ObjectMapper (3.1.0)
   - ReachabilitySwift (3)
   - UIColor_Hex_Swift (3.0.2)
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.5)
   - AlamofireObjectMapper (~> 5.0)
   - FontAwesome.swift
+  - Localize-Swift (~> 1.6)
   - ObjectMapper (~> 3.0)
   - ReachabilitySwift (~> 3)
   - UIColor_Hex_Swift (~> 3.0.1)
@@ -20,10 +22,11 @@ SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
   FontAwesome.swift: b4e4c8ccbbecb12f9b592bc533ff237af3706667
+  Localize-Swift: 6cabc1087c0e910e77bfa87c2ed3f65c80c0b2df
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: c62afcd3956f29337cad1647f0021395f9350e0a
+PODFILE CHECKSUM: 7a23b2e13d1ac43c2df8374d385483cdf789752e
 
 COCOAPODS: 1.3.1
