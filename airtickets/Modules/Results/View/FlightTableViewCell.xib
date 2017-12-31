@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,7 +40,6 @@
                                         <rect key="frame" x="0.0" y="10" width="84" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="2Yn-uc-BaJ"/>
-                                            <constraint firstAttribute="width" secondItem="oKS-ws-7ch" secondAttribute="height" multiplier="21:5" id="rXe-h5-dmD"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -122,14 +120,12 @@
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="CR3-BX-Vxq">
                                         <rect key="frame" x="84" y="10" width="84" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="CR3-BX-Vxq" secondAttribute="height" multiplier="21:5" id="91c-VX-fJp"/>
                                             <constraint firstAttribute="height" constant="20" id="UXd-xu-s90"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quarta, 08 de dezembro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0f5-Mh-dc5">
                                         <rect key="frame" x="168" y="10" width="169" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="0f5-Mh-dc5" secondAttribute="height" multiplier="169:20" id="kMu-8u-Jc6"/>
                                             <constraint firstAttribute="height" constant="20" id="xnE-48-lB2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
@@ -150,6 +146,7 @@
                                     <constraint firstItem="0f5-Mh-dc5" firstAttribute="leading" secondItem="CR3-BX-Vxq" secondAttribute="trailing" id="I7Q-Q6-Gsg"/>
                                     <constraint firstItem="ZCZ-Oi-YUP" firstAttribute="leading" secondItem="Mhl-2A-Xwa" secondAttribute="trailing" id="LXP-ni-Dcd"/>
                                     <constraint firstItem="Gyf-47-q7X" firstAttribute="leading" secondItem="pj2-o5-OZh" secondAttribute="leading" id="Pmv-9Y-oL8"/>
+                                    <constraint firstItem="oKS-ws-7ch" firstAttribute="width" secondItem="Gyf-47-q7X" secondAttribute="width" id="QUK-4y-4YM"/>
                                     <constraint firstItem="Mhl-2A-Xwa" firstAttribute="leading" secondItem="T7d-XV-cV4" secondAttribute="trailing" id="Vog-od-tpH"/>
                                     <constraint firstAttribute="height" constant="90" id="Zc8-CH-Myg"/>
                                     <constraint firstItem="1Lq-VO-JhN" firstAttribute="top" secondItem="Gyf-47-q7X" secondAttribute="bottom" id="ak3-UL-bdo"/>
@@ -165,6 +162,7 @@
                                     <constraint firstItem="T7d-XV-cV4" firstAttribute="top" secondItem="CR3-BX-Vxq" secondAttribute="bottom" constant="14" id="hHG-pu-w3V"/>
                                     <constraint firstItem="ZCZ-Oi-YUP" firstAttribute="width" secondItem="Gyf-47-q7X" secondAttribute="width" id="jXH-Vv-9bc"/>
                                     <constraint firstItem="CR3-BX-Vxq" firstAttribute="top" secondItem="pj2-o5-OZh" secondAttribute="top" constant="10" id="mF1-y1-5hS"/>
+                                    <constraint firstItem="CR3-BX-Vxq" firstAttribute="width" secondItem="T7d-XV-cV4" secondAttribute="width" id="njU-3F-BL5"/>
                                     <constraint firstItem="8ad-hw-rYw" firstAttribute="top" secondItem="T7d-XV-cV4" secondAttribute="bottom" id="pOD-7W-cHf"/>
                                     <constraint firstItem="1Lq-VO-JhN" firstAttribute="leading" secondItem="pj2-o5-OZh" secondAttribute="leading" id="qKe-uD-ze2"/>
                                     <constraint firstItem="Mhl-2A-Xwa" firstAttribute="top" secondItem="0f5-Mh-dc5" secondAttribute="bottom" constant="14" id="rjY-Fg-oyg"/>
@@ -180,7 +178,6 @@
                                         <rect key="frame" x="0.0" y="10" width="84" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="OR0-eP-kOg"/>
-                                            <constraint firstAttribute="width" secondItem="RE7-MJ-lYE" secondAttribute="height" multiplier="21:5" id="nOu-AH-3a0"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -261,7 +258,6 @@
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="fQW-rT-I5g">
                                         <rect key="frame" x="84" y="10" width="84" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="fQW-rT-I5g" secondAttribute="height" multiplier="21:5" id="0Vk-v0-Ab3"/>
                                             <constraint firstAttribute="height" constant="20" id="Uml-Pn-OqJ"/>
                                         </constraints>
                                     </imageView>
@@ -269,7 +265,6 @@
                                         <rect key="frame" x="168" y="10" width="169" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="fz5-x8-lVx"/>
-                                            <constraint firstAttribute="width" secondItem="lKM-sE-bvm" secondAttribute="height" multiplier="169:20" id="moc-se-DQ2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -280,6 +275,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="lKM-sE-bvm" secondAttribute="trailing" id="5tL-gr-5Of"/>
                                     <constraint firstItem="Bvv-yS-8Z3" firstAttribute="width" secondItem="C53-c6-lh2" secondAttribute="width" id="7ME-Gd-cMm"/>
+                                    <constraint firstItem="fQW-rT-I5g" firstAttribute="width" secondItem="Bvv-yS-8Z3" secondAttribute="width" id="7NW-eS-mcb"/>
                                     <constraint firstItem="yvU-DJ-wG3" firstAttribute="top" secondItem="DGR-om-yVp" secondAttribute="bottom" id="82O-GH-MRY"/>
                                     <constraint firstItem="Bvv-yS-8Z3" firstAttribute="leading" secondItem="C53-c6-lh2" secondAttribute="trailing" id="8yZ-qr-yav"/>
                                     <constraint firstAttribute="height" constant="90" id="9gx-K9-VEX"/>
@@ -297,6 +293,7 @@
                                     <constraint firstItem="nVb-eN-zLk" firstAttribute="leading" secondItem="Uj3-Hh-5cm" secondAttribute="leading" id="T7V-I2-3RX"/>
                                     <constraint firstItem="C53-c6-lh2" firstAttribute="leading" secondItem="Uj3-Hh-5cm" secondAttribute="leading" id="TIX-eN-jRb"/>
                                     <constraint firstItem="yvU-DJ-wG3" firstAttribute="leading" secondItem="CsG-MW-gsz" secondAttribute="trailing" id="Vsj-q5-Yku"/>
+                                    <constraint firstItem="RE7-MJ-lYE" firstAttribute="width" secondItem="C53-c6-lh2" secondAttribute="width" id="YBb-Ua-cbm"/>
                                     <constraint firstItem="OEi-93-o2J" firstAttribute="top" secondItem="lKM-sE-bvm" secondAttribute="bottom" constant="14" id="dhH-aQ-vse"/>
                                     <constraint firstItem="DGR-om-yVp" firstAttribute="top" secondItem="lKM-sE-bvm" secondAttribute="bottom" constant="14" id="h0u-Es-1we"/>
                                     <constraint firstItem="yvU-DJ-wG3" firstAttribute="width" secondItem="nVb-eN-zLk" secondAttribute="width" id="hXX-Lc-PBf"/>
