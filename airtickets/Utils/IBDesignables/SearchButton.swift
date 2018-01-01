@@ -25,8 +25,8 @@ class SearchButton: UIButton {
     // MARK:- Private Methods
     
     fileprivate func setup() {
-        setBackgroundImage(ImageHelper.imageFromColor(UIColor.topaz, forSize: self.bounds.size, withCornerRadius: 4.0), for: .normal)
-        setBackgroundImage(ImageHelper.imageFromColor(UIColor.blueGreen, forSize: self.bounds.size, withCornerRadius: 4.0), for: .highlighted)
+        setBackgroundImage(ImageHelper.imageFromColor(UIColor.topaz, forSize: self.bounds.size, withCornerRadius: 0.0), for: .normal)
+        setBackgroundImage(ImageHelper.imageFromColor(UIColor.blueGreen, forSize: self.bounds.size, withCornerRadius: 0.0), for: .highlighted)
         
         layer.cornerRadius = 4.0
         layer.shadowOffset = CGSize(width: 0.0, height: 1.5)

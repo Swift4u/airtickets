@@ -24,7 +24,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckR-fM-Wpx">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="529"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="IATA Origem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8UW-Nb-c1w" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="IATA Origem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8UW-Nb-c1w" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
                                                 <rect key="frame" x="19" y="20" width="337" height="54"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="tEh-Ei-T4X"/>
@@ -36,7 +36,7 @@
                                                     <outlet property="delegate" destination="X82-17-wK8" id="skb-FA-OHn"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="IATA Destino" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfY-Dt-hvm" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="IATA Destino" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfY-Dt-hvm" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
                                                 <rect key="frame" x="19" y="95" width="337" height="54"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="9R3-x4-h35"/>
@@ -48,7 +48,7 @@
                                                     <outlet property="delegate" destination="X82-17-wK8" id="ect-7C-k45"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Data da ida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OW0-5z-XF6" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Data da ida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OW0-5z-XF6" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
                                                 <rect key="frame" x="19" y="170" width="161" height="54"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="kAa-TA-kmO"/>
@@ -57,7 +57,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Data da volta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLK-p6-V3f" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Data da volta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLK-p6-V3f" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
                                                 <rect key="frame" x="195" y="170" width="161" height="54"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="6QT-Ii-JSn"/>
@@ -66,7 +66,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Quantidade de passageiros" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OoF-Of-1NU" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Quantidade de passageiros" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OoF-Of-1NU" customClass="SearchTextField" customModule="airtickets" customModuleProvider="target">
                                                 <rect key="frame" x="19" y="245" width="337" height="54"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="2QI-C2-OrL"/>
@@ -120,8 +120,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuQ-sF-XaF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="AKM-gp-1gA">
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="AKM-gp-1gA">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
+                                        <color key="backgroundColor" red="0.088612698020000005" green="0.65396511550000003" blue="0.54017931220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
