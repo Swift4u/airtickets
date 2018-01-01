@@ -68,6 +68,12 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable, UITextFi
             showError("INVALID_DEPARTURE".localized())
             return
         }
+        
+        if tfArrival.text == "" {
+            tfArrival.isInvalidTextField = true
+            showError("INVALID_ARRIVAL".localized())
+            return
+        }
 
         guard let numPassengers = tfPassengers.text, numPassengers != "" else {
             tfPassengers.isInvalidTextField = true
@@ -75,7 +81,7 @@ class MainSearchViewController: BaseViewController, StoryboardLoadable, UITextFi
             return
         }
         
-        presenter?.didClickSearchButton(origin: origin, destination: destination, departure: departurePicker.pickerView.date, arrival: (tfArrival.text != "" ? arrivalPicker.pickerView.date : nil), adults: numPassengers)
+        presenter?.didClickSearchButton(origin: origin, destination: destination, departure: departurePicker.pickerView.date, arrival: arrivalPicker.pickerView.date, adults: numPassengers)
     }
     
     // MARK: Private

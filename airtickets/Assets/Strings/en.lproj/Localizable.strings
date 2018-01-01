@@ -19,7 +19,8 @@
 "REMOVER_FILTRO" = "Remover Filtro";
 "INVALID_ORIGIN" = "Informe a origem";
 "INVALID_DESTINATION" = "Informe o destino";
-"INVALID_DEPARTURE" = "Informe a data de partida";
+"INVALID_DEPARTURE" = "Informe a data da ida";
+"INVALID_ARRIVAL" = "Informe a data da volta";
 "INVALID_PASSENGERS" = "Informe a quantidade de adultos";
 "SEARCH" = "Buscar areoporto ou cidade";
 "TITLE_ERROR" = "Erro";

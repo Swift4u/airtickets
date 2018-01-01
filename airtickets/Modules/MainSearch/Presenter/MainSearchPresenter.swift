@@ -22,7 +22,7 @@ class MainSearchPresenter {
 
 extension MainSearchPresenter: MainSearchPresentation {
     
-    func didClickSearchButton(origin: Airport, destination: Airport, departure: Date, arrival: Date?, adults: String) {
+    func didClickSearchButton(origin: Airport, destination: Airport, departure: Date, arrival: Date, adults: String) {
         view?.showLoading()
         
         let request = FlightRequest()

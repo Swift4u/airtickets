@@ -13,7 +13,7 @@ protocol MainSearchView: BaseView {
 }
 
 protocol MainSearchPresentation: class {
-    func didClickSearchButton(origin: Airport, destination: Airport, departure: Date, arrival: Date?, adults: String)
+    func didClickSearchButton(origin: Airport, destination: Airport, departure: Date, arrival: Date, adults: String)
     func didClickAirportFilter()
 }
 
