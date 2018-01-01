@@ -21,14 +21,6 @@ enum Constants {
         static let appKey = "74efa4b28d88dee97752a48c5ba8892e"
     }
     
-    enum Storyboard {
-        static let mainSearchStoryboard = "MainSearchStoryboard"
-    }
-    
-    enum ViewControllerIdentifier {
-        static let mainSearchViewControllerIdentifier = "MainSearchViewControllerID"
-    }
-    
     enum Label {
         static let padding = CGFloat(10)
         static let edgeInsets = UIEdgeInsetsMake(0, 10, 0, 0)

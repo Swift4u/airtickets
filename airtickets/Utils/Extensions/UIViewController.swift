@@ -10,7 +10,6 @@ import UIKit
 
 extension UIViewController {
     
-    
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tap.cancelsTouchesInView = false
@@ -49,6 +48,7 @@ extension UIViewController {
             return self
         }
     }
+
 }
 
 extension UIViewController: UIGestureRecognizerDelegate {
@@ -59,6 +59,7 @@ extension UIViewController: UIGestureRecognizerDelegate {
         }
         return true
     }
+
 }
 
 extension UIViewController: ReusableView { }

@@ -324,7 +324,6 @@
 			children = (
 				4C7D926D1FF6507800702823 /* Constants */,
 				4C7D926E1FF6508200702823 /* DataManagers */,
-				4C7D926F1FF6508F00702823 /* Delegate */,
 				4C7D92701FF6509E00702823 /* Extensions */,
 				4C7D92711FF650A600702823 /* Helpers */,
 				4C7D92721FF650B600702823 /* IBDesignables */,
@@ -368,13 +367,6 @@
 				4C7D92771FF6520700702823 /* Local */,
 			);
 			path = DataManagers;
-			sourceTree = "<group>";
-		};
-		4C7D926F1FF6508F00702823 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Delegate;
 			sourceTree = "<group>";
 		};
 		4C7D92701FF6509E00702823 /* Extensions */ = {
@@ -573,7 +565,6 @@
 				4C7D925E1FF6477C00702823 /* Assets */,
 				4C7D925F1FF6478D00702823 /* Entities */,
 				4C7D92601FF6479800702823 /* Modules */,
-				4C80F22C1FF52989002D6A2F /* Resources */,
 				4C7D92611FF647A200702823 /* Utils */,
 				4C80F20C1FF5158F002D6A2F /* Info.plist */,
 			);
@@ -588,13 +579,6 @@
 				4C33472B1FFA5F1F0064A16D /* AirportLocalDataManagerTests.swift */,
 			);
 			path = airticketsTests;
-			sourceTree = "<group>";
-		};
-		4C80F22C1FF52989002D6A2F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		4CAAA4011FF9076E00BDBA50 /* Results */ = {

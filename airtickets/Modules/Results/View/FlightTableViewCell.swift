@@ -2,7 +2,7 @@
 //  FlightTableViewCell.swift
 //  airtickets
 //
-//  Created by Framework System on 31/12/17.
+//  Created by Paulo Rodrigues on 31/12/17.
 //  Copyright © 2017 MaxMilhas. All rights reserved.
 //
 
