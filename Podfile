@@ -11,6 +11,12 @@ target 'airtickets' do
     pod 'Localize-Swift', '~> 1.6'
 end
 
+target 'airticketsTests' do
+    pod 'Alamofire', '~> 4.5'
+    pod 'AlamofireObjectMapper', '~> 5.0'
+    pod 'ObjectMapper', '~> 3.0'
+end
+
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
