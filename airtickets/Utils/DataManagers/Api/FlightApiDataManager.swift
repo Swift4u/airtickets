@@ -20,7 +20,7 @@ class FlightApiDataManager: NSObject {
             .request(url, method: .get, parameters: params.toJSON(), encoding: URLEncoding.default, headers: nil)
             .responseObject(completionHandler: { (response: DataResponse<ResultSearch>) in
                 if let err = response.result.value?.data?.error {
-                    let objError = NSError(domain: "api", code: 200, userInfo: [NSLocalizedDescriptionKey : err.error ?? ""])
+                    let objError = NSError(domain: "api", code: 200, userInfo: [NSLocalizedDescriptionKey : err])
                     completion(nil, objError)
                 } else {
                     completion(response.result.value?.data?.onwardFlights, response.error)

@@ -20,7 +20,7 @@ class ResultSearch: Mappable {
     
     func mapping(map: Map) {
         data <- map["data"]
-        lenght <- map["lenght"]
+        lenght <- map["data_length"]
     }
     
 }
@@ -29,7 +29,7 @@ class ListFlight: Mappable {
     
     var returnFlights: [Flight]?
     var onwardFlights: [Flight]?
-    var error: ResponseErrors?
+    var error: String?
     
     required init?(map: Map) {
         
