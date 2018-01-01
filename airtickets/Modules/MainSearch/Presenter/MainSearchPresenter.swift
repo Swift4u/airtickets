@@ -8,6 +8,7 @@
 
 import Foundation
 import ObjectMapper
+import Localize_Swift
 
 class MainSearchPresenter {
     
@@ -47,7 +48,7 @@ extension MainSearchPresenter: MainSearchInteractorOutput {
         view?.hideLoading()
         
         if flights.count == 0 {
-            view?.showError("NO_RESULTS_FOUND")
+            view?.showError("NO_RESULTS_FOUND".localized())
         } else {
             let results = flights.filter({ (flight) -> Bool in
                 return flight.returnFlights?.first != nil
